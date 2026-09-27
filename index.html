@@ -19,16 +19,26 @@
 </head>
 <body>
 
-  <!-- Top Notification Bar with Contacts -->
+  <!-- Top Notification Bar with Contacts & Language/Theme Controls at the Right Top of the Whole Page -->
   <div class="top-notice-bar">
     <div class="top-bar-inner">
-      <div class="top-bar-left">
+      <div class="top-bar-left" data-i18n="topNotice">
         <span><i class="fa-solid fa-leaf"></i> 100% Authentic Homemade</span> • Traditional Karnataka Brahmin Vegetarian Taste
       </div>
-      <div class="top-bar-contacts">
-        <a href="tel:+919972017010" class="top-contact-pill"><i class="fa-solid fa-phone"></i> Srinivas: 9972017010</a>
-        <a href="https://wa.me/918197933637" class="top-contact-pill"><i class="fa-brands fa-whatsapp"></i> Karthik: 8197933637</a>
-        <a href="https://wa.me/919880170209" class="top-contact-pill"><i class="fa-brands fa-whatsapp"></i> Manikanta: 9880170209</a>
+      <div class="top-bar-right">
+        <div class="top-bar-contacts">
+          <a href="tel:+919972017010" class="top-contact-pill"><i class="fa-solid fa-phone"></i> Srinivas: 9972017010</a>
+          <a href="https://wa.me/918197933637" class="top-contact-pill"><i class="fa-brands fa-whatsapp"></i> Karthik: 8197933637</a>
+          <a href="https://wa.me/919880170209" class="top-contact-pill"><i class="fa-brands fa-whatsapp"></i> Manikanta: 9880170209</a>
+        </div>
+        <div class="header-controls">
+          <button class="control-btn lang-toggle-btn" aria-label="Toggle Language" title="Change Language / ಭಾಷೆ ಬದಲಿಸಿ">
+            <i class="fa-solid fa-language"></i> <span class="lang-badge">ಕನ್ನಡ</span>
+          </button>
+          <button class="control-btn theme-toggle-btn" aria-label="Toggle Dark Mode" title="Toggle Dark/Light Mode">
+            <i class="fa-solid fa-moon theme-icon"></i> <span class="theme-text">Dark</span>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -39,8 +49,8 @@
       <a href="index.html" class="brand-link">
         <img src="assets/logo.png" alt="Sri Srinivasa Foods Logo" class="brand-logo-img">
         <div class="brand-text-wrap">
-          <span class="brand-name">Sri Srinivasa Foods</span>
-          <span class="brand-sub kannada-text">ಶ್ರೀ ಶ್ರೀನಿವಾಸ ಫುಡ್ಸ್</span>
+          <span class="brand-name" data-i18n="heroTitle">Sri Srinivasa Foods</span>
+          <span class="brand-sub kannada-text" data-i18n="brandSub">ಶ್ರೀ ಶ್ರೀನಿವಾಸ ಫುಡ್ಸ್</span>
         </div>
       </a>
 
@@ -50,15 +60,15 @@
 
       <nav>
         <ul class="nav-menu" id="navMenu">
-          <li><a href="index.html" class="nav-link active">Home</a></li>
-          <li><a href="about.html" class="nav-link">About Us / Chef</a></li>
-          <li><a href="pickles.html" class="nav-link">Pickles</a></li>
-          <li><a href="happalasandige.html" class="nav-link">Happala / Sandige</a></li>
-          <li><a href="chillie-powder.html" class="nav-link">Masala Powders</a></li>
-          <li><a href="other-foods.html" class="nav-link">Other Foods</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
-          <li><a href="feedback.html" class="nav-link">Feedback</a></li>
-          <li><a href="order.html" class="nav-link nav-cta-btn"><i class="fa-solid fa-cart-shopping"></i> Order Now</a></li>
+          <li><a href="index.html" class="nav-link active" data-i18n="navHome">Home</a></li>
+          <li><a href="about.html" class="nav-link" data-i18n="navAbout">About Us / Chef</a></li>
+          <li><a href="pickles.html" class="nav-link" data-i18n="navPickles">Pickles</a></li>
+          <li><a href="happalasandige.html" class="nav-link" data-i18n="navHappala">Happala / Sandige</a></li>
+          <li><a href="chillie-powder.html" class="nav-link" data-i18n="navMasala">Masala Powders</a></li>
+          <li><a href="other-foods.html" class="nav-link" data-i18n="navOther">Other Foods</a></li>
+          <li><a href="contact.html" class="nav-link" data-i18n="navContact">Contact</a></li>
+          <li><a href="feedback.html" class="nav-link" data-i18n="navFeedback">Feedback</a></li>
+          <li><a href="order.html" class="nav-link nav-cta-btn" data-i18n="navOrderNow"><i class="fa-solid fa-cart-shopping"></i> Order Now</a></li>
         </ul>
       </nav>
     </div>
@@ -68,15 +78,15 @@
   <section class="hero-section">
     <div class="hero-inner">
       <img src="assets/logo.png" alt="Sri Srinivasa Foods" class="hero-logo-badge">
-      <h1 class="hero-title">Sri Srinivasa Foods</h1>
-      <p class="hero-subtitle-kannada kannada-text">ಶುದ್ಧ ಹಾಗೂ ಸಾಂಪ್ರದಾಯಿಕ ಮನೆ ಶೈಲಿಯ ಆಹಾರ ಪದಾರ್ಥಗಳು</p>
-      <p class="hero-tagline">
+      <h1 class="hero-title" data-i18n="heroTitle">Sri Srinivasa Foods</h1>
+      <p class="hero-subtitle-kannada kannada-text" data-i18n="heroSubtitle">ಶುದ್ಧ ಹಾಗೂ ಸಾಂಪ್ರದಾಯಿಕ ಮನೆ ಶೈಲಿಯ ಆಹಾರ ಪದಾರ್ಥಗಳು</p>
+      <p class="hero-tagline" data-i18n="heroTagline">
         Relish the rich aroma of authentic South Indian homemade pickles, freshly ground spice powders, sun-dried happala & sandige, and mouth-watering tokku prepared by Chef Srinivas G R in Gangapura, Kolar.
       </p>
       <div class="hero-actions">
-        <a href="#order-form-section" class="btn btn-gold"><i class="fa-solid fa-pen-to-square"></i> Fill Requirement Form</a>
-        <a href="#food-list-section" class="btn btn-outline"><i class="fa-solid fa-list-check"></i> View Full Food Menu & Prices</a>
-        <a href="about.html" class="btn btn-outline"><i class="fa-solid fa-user"></i> Meet Our Chef</a>
+        <a href="#order-form-section" class="btn btn-gold" data-i18n="btnFillForm"><i class="fa-solid fa-pen-to-square"></i> Fill Requirement Form</a>
+        <a href="#food-list-section" class="btn btn-outline" data-i18n="btnViewMenu"><i class="fa-solid fa-list-check"></i> View Full Food Menu & Prices</a>
+        <a href="about.html" class="btn btn-outline" data-i18n="btnMeetChef"><i class="fa-solid fa-user"></i> Meet Our Chef</a>
       </div>
     </div>
   </section>
@@ -85,9 +95,9 @@
 
     <!-- Categories Highlights -->
     <div class="section-header">
-      <span class="section-tag">Our Traditional Specialties</span>
-      <h2 class="section-title">Explore Our Delicious Range</h2>
-      <p class="section-subtitle">Prepared hygienically with premium spices and traditional authentic recipes.</p>
+      <span class="section-tag" data-en="Our Traditional Specialties" data-kn="ನಮ್ಮ ಸಾಂಪ್ರದಾಯಿಕ ವಿಶೇಷತೆಗಳು">Our Traditional Specialties</span>
+      <h2 class="section-title" data-i18n="specTitle">Explore Our Delicious Range</h2>
+      <p class="section-subtitle" data-i18n="specSubtitle">Prepared hygienically with premium spices and traditional authentic recipes.</p>
     </div>
 
     <div class="category-grid">
@@ -98,13 +108,13 @@
         </div>
         <div class="category-card-body">
           <div>
-            <h3>Pickles</h3>
+            <h3 data-i18n="catPickles">Pickles</h3>
             <div class="kannada-name kannada-text">ಉಪ್ಪಿನಕಾಯಿ</div>
-            <p>Mango, Lemon, Mango Ginger, Makli Beru, Avakai, and Nelli Kayi pickles cured in traditional ceramic Bharanis.</p>
+            <p data-i18n="catPicklesDesc">Mango, Lemon, Mango Ginger, Makli Beru, Avakai, and Nelli Kayi pickles cured in traditional ceramic Bharanis.</p>
           </div>
           <div>
             <div class="price-badge">₹ 250 - 600 / kg</div>
-            <a href="pickles.html" class="btn btn-primary btn-sm" style="width: 100%;">View Pickles <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="pickles.html" class="btn btn-primary btn-sm" style="width: 100%;" data-en="View Pickles" data-kn="ಉಪ್ಪಿನಕಾಯಿ ನೋಡಿ">View Pickles <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
       </div>
@@ -116,13 +126,13 @@
         </div>
         <div class="category-card-body">
           <div>
-            <h3>Masala & Chutney Powders</h3>
+            <h3 data-i18n="catMasala">Masala & Chutney Powders</h3>
             <div class="kannada-name kannada-text">ಮಸಾಲೆ ಮತ್ತು ಚಟ್ನಿ ಪುಡಿಗಳು</div>
-            <p>Aromatic Sambhar, Rasam, Bisi Bele Bath, Vangi Bath, Puliyogare, and pure Chutney powders freshly ground to order.</p>
+            <p data-i18n="catMasalaDesc">Aromatic Sambhar, Rasam, Bisi Bele Bath, Vangi Bath, Puliyogare, and pure Chutney powders freshly ground to order.</p>
           </div>
           <div>
             <div class="price-badge">₹ 600 - 800 / kg</div>
-            <a href="chillie-powder.html" class="btn btn-primary btn-sm" style="width: 100%;">View Powders <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="chillie-powder.html" class="btn btn-primary btn-sm" style="width: 100%;" data-en="View Powders" data-kn="ಮಸಾಲೆ ಪುಡಿಗಳನ್ನು ನೋಡಿ">View Powders <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
       </div>
@@ -134,13 +144,13 @@
         </div>
         <div class="category-card-body">
           <div>
-            <h3>Happala & Sandige</h3>
+            <h3 data-i18n="catHappala">Happala & Sandige</h3>
             <div class="kannada-name kannada-text">ಹಪ್ಪಳ ಮತ್ತು ಸಂಡಿಗೆ</div>
-            <p>Sun-dried Akki Happala, Peni (Shavige) Sandige, Sabakki, Haralu Sandige, Kolu, and crisp Potato Chips.</p>
+            <p data-i18n="catHappalaDesc">Sun-dried Akki Happala, Peni (Shavige) Sandige, Sabakki, Haralu Sandige, Kolu, and crisp Potato Chips.</p>
           </div>
           <div>
             <div class="price-badge">Happala: ₹150/100 pcs | Sandige: ₹150-450/kg</div>
-            <a href="happalasandige.html" class="btn btn-primary btn-sm" style="width: 100%;">View Happala & Sandige <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="happalasandige.html" class="btn btn-primary btn-sm" style="width: 100%;" data-en="View Happala & Sandige" data-kn="ಹಪ್ಪಳ/ಸಂಡಿಗೆ ನೋಡಿ">View Happala & Sandige <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
       </div>
@@ -152,13 +162,13 @@
         </div>
         <div class="category-card-body">
           <div>
-            <h3>Tokku, Gojju & Other Foods</h3>
+            <h3 data-i18n="catOther">Tokku, Gojju & Other Foods</h3>
             <div class="kannada-name kannada-text">ತೊಕ್ಕು ಮತ್ತು ಇತರ ಉತ್ಪನ್ನಗಳು</div>
-            <p>Tangy Mango/Tomato/Tamarind Tokku, Melkote style Puliyogare Gojju, Uppu Menasinakayi & Hurida Ragi Hittu.</p>
+            <p data-i18n="catOtherDesc">Tangy Mango/Tomato/Tamarind Tokku, Melkote style Puliyogare Gojju, Uppu Menasinakayi & Hurida Ragi Hittu.</p>
           </div>
           <div>
             <div class="price-badge">Tokku: ₹250/kg | Gojju: ₹700/kg</div>
-            <a href="other-foods.html" class="btn btn-primary btn-sm" style="width: 100%;">View Other Foods <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="other-foods.html" class="btn btn-primary btn-sm" style="width: 100%;" data-en="View Other Foods" data-kn="ಇತರ ಆಹಾರಗಳನ್ನು ನೋಡಿ">View Other Foods <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
       </div>
@@ -167,33 +177,33 @@
     <!-- Meet Our Chef Preview Section -->
     <section class="chef-profile-card">
       <div class="chef-photo-wrap">
-        <img src="assets/srinivasachef.jpeg" alt="Chef Srinivas G R" class="chef-photo">
+        <img src="assets/chef.jpg" alt="Chef Srinivas G R" class="chef-photo">
         <h3 class="chef-badge-name">G R Srinivas</h3>
-        <p class="chef-badge-title">Master Chef & Founder</p>
+        <p class="chef-badge-title" data-en="Master Chef & Founder" data-kn="ಮುಖ್ಯ ಬಾಣಸಿಗರು ಮತ್ತು ಸಂಸ್ಥಾಪಕರು">Master Chef & Founder</p>
         <div style="margin-top: 12px;">
           <a href="tel:+919972017010" class="btn btn-gold btn-sm"><i class="fa-solid fa-phone"></i> 9972017010</a>
         </div>
       </div>
 
       <div class="chef-story-wrap">
-        <span class="section-tag">About Our Chef</span>
-        <h2>Meet Our Chef - Srinivas G R</h2>
-        <p>
+        <span class="section-tag" data-en="About Our Chef" data-kn="ನಮ್ಮ ಬಾಣಸಿಗರು">About Our Chef</span>
+        <h2 data-i18n="chefSectionTitle">Meet Our Chef - Srinivas G R</h2>
+        <p data-i18n="chefStory">
           With a passion towards cooking, <strong>I Srinivas G R</strong> started my journey as a chef. Cooking is something that makes me happy and I love cooking for others. When I serve a bowl of a recipe, it contains my love, hard work, and passion for my profession.
         </p>
-        <blockquote>
+        <blockquote data-i18n="chefQuote">
           "It is not less than magic to turn healthy ingredients into an irresistible recipe that everyone loves to eat. And this chef is a person who has a perfect solution for this."
         </blockquote>
-        <a href="about.html" class="btn btn-primary"><i class="fa-solid fa-book-open"></i> Read Full Story & Philosophy</a>
+        <a href="about.html" class="btn btn-primary" data-i18n="btnReadStory"><i class="fa-solid fa-book-open"></i> Read Full Story & Philosophy</a>
       </div>
     </section>
 
-    <!-- Complete Foods & Updated Price Table Section (No Chillie Powder) -->
+    <!-- Complete Foods & Price Table Section -->
     <section id="food-list-section" style="margin-top: 50px;">
       <div class="section-header">
-        <span class="section-tag">Complete Price Catalog</span>
-        <h2 class="section-title">List of All Foods We Sell & Prices</h2>
-        <p class="section-subtitle">Updated prices across all our handcrafted traditional food lines.</p>
+        <span class="section-tag" data-en="Complete Price Catalog" data-kn="ಸಂಪೂರ್ಣ ದರ ವಿವರ">Complete Price Catalog</span>
+        <h2 class="section-title" data-i18n="catalogTitle">List of All Foods We Sell & Prices</h2>
+        <p class="section-subtitle" data-i18n="catalogSubtitle">Updated prices across all our handcrafted traditional food lines.</p>
       </div>
 
       <div class="table-wrapper">
@@ -201,14 +211,14 @@
           <thead>
             <tr>
               <th style="width: 45px;">#</th>
-              <th>Masala & Chutney Powders</th>
-              <th>Price</th>
+              <th>Masala & Chutney Powders (ಮಸಾಲೆ/ಚಟ್ನಿ ಪುಡಿಗಳು)</th>
+              <th>Price (ದರ)</th>
               <th>Pickles (ಉಪ್ಪಿನಕಾಯಿ)</th>
-              <th>Price</th>
+              <th>Price (ದರ)</th>
               <th>Tokku & Gojju (ತೊಕ್ಕು/ಗೊಜ್ಜು)</th>
-              <th>Price</th>
+              <th>Price (ದರ)</th>
               <th>Sandige & Papad (ಹಪ್ಪಳ/ಸಂಡಿಗೆ)</th>
-              <th>Price</th>
+              <th>Price (ದರ)</th>
             </tr>
           </thead>
           <tbody>
@@ -319,20 +329,20 @@
     <!-- Embedded Requirement / Google Forms Section -->
     <section id="order-form-section" class="form-section-card">
       <div class="section-header" style="margin-bottom: 20px;">
-        <span class="section-tag">Online Order</span>
-        <h2 class="section-title">Submit Requirements Directly</h2>
-        <p class="section-subtitle">Select the relevant form below to submit your order:</p>
+        <span class="section-tag" data-en="Online Order" data-kn="ಆನ್‌ಲೈನ್ ಆರ್ಡರ್">Online Order</span>
+        <h2 class="section-title" data-i18n="orderTitle">Submit Requirements Directly</h2>
+        <p class="section-subtitle" data-i18n="orderSubtitle">Select the relevant form below to submit your order:</p>
       </div>
 
       <div class="form-tabs-nav">
-        <button class="tab-btn active" data-tab="form-pickle"><i class="fa-solid fa-jar"></i> 1. Pickle Order Form (ಉಪ್ಪಿನಕಾಯಿ)</button>
-        <button class="tab-btn" data-tab="form-happala"><i class="fa-solid fa-bowl-rice"></i> 2. Happala & Sandige Form (ಹಪ್ಪಳ/ಸಂಡಿಗೆ)</button>
-        <button class="tab-btn" data-tab="form-enquiry"><i class="fa-solid fa-clipboard-question"></i> 3. Powders & General Enquiry (ವಿಚಾರಣೆ)</button>
+        <button class="tab-btn active" data-tab="form-pickle" data-i18n="tabPickle"><i class="fa-solid fa-jar"></i> 1. Pickle Order Form (ಉಪ್ಪಿನಕಾಯಿ)</button>
+        <button class="tab-btn" data-tab="form-happala" data-i18n="tabHappala"><i class="fa-solid fa-bowl-rice"></i> 2. Happala & Sandige Form (ಹಪ್ಪಳ/ಸಂಡಿಗೆ)</button>
+        <button class="tab-btn" data-tab="form-enquiry" data-i18n="tabEnquiry"><i class="fa-solid fa-clipboard-question"></i> 3. Powders & General Enquiry (ವಿಚಾರಣೆ)</button>
       </div>
 
       <!-- Tab 1: Pickle Order Form -->
       <div class="tab-content active" id="form-pickle">
-        <div style="margin-bottom: 12px; font-weight: 600; color: var(--primary);">
+        <div style="margin-bottom: 12px; font-weight: 600; color: var(--primary);" data-en="Fill out this Google Form to order authentic homemade pickles:" data-kn="ಶುದ್ಧ ಮನೆ ಶೈಲಿಯ ಉಪ್ಪಿನಕಾಯಿಗಳನ್ನು ಆರ್ಡರ್ ಮಾಡಲು ಈ ಗೂಗಲ್ ಫಾರ್ಮ್ ಭರ್ತಿ ಮಾಡಿ:">
           <i class="fa-solid fa-circle-info"></i> Fill out this Google Form to order authentic homemade pickles:
         </div>
         <div class="form-iframe-container">
@@ -342,7 +352,7 @@
 
       <!-- Tab 2: Happala Sandige Form -->
       <div class="tab-content" id="form-happala">
-        <div style="margin-bottom: 12px; font-weight: 600; color: var(--primary);">
+        <div style="margin-bottom: 12px; font-weight: 600; color: var(--primary);" data-en="Fill out this Google Form for crisp Happala and Sandige orders:" data-kn="ಗರಿಗರಿಯಾದ ಹಪ್ಪಳ ಮತ್ತು ಸಂಡಿಗೆಗಳನ್ನು ಆರ್ಡರ್ ಮಾಡಲು ಈ ಗೂಗಲ್ ಫಾರ್ಮ್ ಭರ್ತಿ ಮಾಡಿ:">
           <i class="fa-solid fa-circle-info"></i> Fill out this Google Form for crisp Happala and Sandige orders:
         </div>
         <div class="form-iframe-container">
@@ -352,7 +362,7 @@
 
       <!-- Tab 3: General Enquiry Form -->
       <div class="tab-content" id="form-enquiry">
-        <div style="margin-bottom: 12px; font-weight: 600; color: var(--primary);">
+        <div style="margin-bottom: 12px; font-weight: 600; color: var(--primary);" data-en="For masala powders, tokku, gojju, and bulk orders:" data-kn="ಮಸಾಲೆ ಪುಡಿಗಳು, ತೊಕ್ಕು, ಗೊಜ್ಜು ಹಾಗೂ ಹೆಚ್ಚಿನ ವಿವರಗಳಿಗಾಗಿ:">
           <i class="fa-solid fa-circle-info"></i> For masala powders, tokku, gojju, and bulk orders:
         </div>
         <div class="form-iframe-container">
@@ -364,21 +374,21 @@
     <!-- Location & Direct Contacts -->
     <section style="margin-top: 50px;">
       <div class="section-header">
-        <span class="section-tag">Visit & Contact</span>
-        <h2 class="section-title">For More Details Please Visit</h2>
+        <span class="section-tag" data-en="Visit & Contact" data-kn="ಭೇಟಿ ನೀಡಿ ಮತ್ತು ಸಂಪರ್ಕಿಸಿ">Visit & Contact</span>
+        <h2 class="section-title" data-i18n="contactTitle">For More Details Please Visit</h2>
       </div>
 
       <div class="feedback-grid">
         <div class="feedback-info-box">
-          <h3>Sri Srinivasa Foods</h3>
-          <p style="margin-bottom: 18px; color: var(--text-muted);">
+          <h3 data-i18n="heroTitle">Sri Srinivasa Foods</h3>
+          <p style="margin-bottom: 18px; color: var(--text-muted);" data-en="Authentic South Indian vegetarian homemade delicacies prepared with pure ingredients in Kolar." data-kn="ಕೋಲಾರ ಜಿಲ್ಲೆಯಲ್ಲಿ ಶುದ್ಧ ನೈಸರ್ಗಿಕ ಪದಾರ್ಥಗಳನ್ನು ಬಳಸಿ ತಯಾರಿಸಲಾದ ಸಾಂಪ್ರದಾಯಿಕ ಸಸ್ಯಾಹಾರಿ ಆಹಾರ ಉತ್ಪನ್ನಗಳು.">
             Authentic South Indian vegetarian homemade delicacies prepared with pure ingredients in Kolar.
           </p>
 
           <div class="address-item">
             <i class="fa-solid fa-location-dot address-icon"></i>
             <div>
-              <strong>Address / ವಿಳಾಸ:</strong>
+              <strong data-i18n="addressLabel">Address / ವಿಳಾಸ:</strong>
               <p><strong>GANGAPURA VILLAGE, CHAMARAHALLI POST,<br>KOLAR TALUK AND DISTRICT, KARNATAKA - 563101.</strong></p>
             </div>
           </div>
@@ -386,7 +396,7 @@
           <div class="address-item">
             <i class="fa-solid fa-phone address-icon"></i>
             <div>
-              <strong>Phone Calls:</strong>
+              <strong data-i18n="phoneLabel">Phone Calls:</strong>
               <p>
                 Srinivasa: <a href="tel:+919972017010">9972017010</a><br>
                 Karthik G S: <a href="tel:+918197933637">8197933637</a><br>
@@ -398,7 +408,7 @@
           <div class="address-item">
             <i class="fa-brands fa-whatsapp address-icon" style="color: #25d366;"></i>
             <div>
-              <strong>WhatsApp Orders:</strong>
+              <strong data-i18n="whatsappLabel">WhatsApp Orders:</strong>
               <p><a href="https://wa.me/918197933637">8197933637</a> / <a href="https://wa.me/919880170209">9880170209</a></p>
             </div>
           </div>
@@ -406,7 +416,7 @@
           <div class="address-item">
             <i class="fa-solid fa-envelope address-icon"></i>
             <div>
-              <strong>Email:</strong>
+              <strong data-i18n="emailLabel">Email:</strong>
               <p><a href="mailto:karthikiyergs@gmail.com">karthikiyergs@gmail.com</a><br><a href="mailto:manikantaiyer53@gmail.com">manikantaiyer53@gmail.com</a></p>
             </div>
           </div>
@@ -428,7 +438,7 @@
   <!-- WhatsApp Quick Float -->
   <a href="https://wa.me/919880170209?text=Namaskara,%20I%20visited%20Sri%20Srinivasa%20Foods%20website%20and%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener" class="whatsapp-float-btn">
     <i class="fa-brands fa-whatsapp" style="font-size: 1.4rem;"></i>
-    <span>Order on WhatsApp</span>
+    <span data-en="Order on WhatsApp" data-kn="ವಾಟ್ಸಾಪ್‌ನಲ್ಲಿ ಆರ್ಡರ್ ಮಾಡಿ">Order on WhatsApp</span>
   </a>
 
   <!-- Footer -->
@@ -437,9 +447,9 @@
       <div class="footer-col">
         <h4 style="display: flex; align-items: center; gap: 8px;">
           <img src="assets/logo.png" alt="Logo" style="width: 28px; height: 28px; border-radius: 50%; background: #fff;">
-          Sri Srinivasa Foods
+          <span data-i18n="heroTitle">Sri Srinivasa Foods</span>
         </h4>
-        <p>
+        <p data-i18n="footerDesc">
           Dedicated to delivering authentic Karnataka traditional taste right to your home. Pure ingredients, unmatched aroma, and traditional hygiene.
         </p>
         <p class="kannada-text" style="color: #fde68a; margin-top: 10px;">
@@ -448,21 +458,21 @@
       </div>
 
       <div class="footer-col">
-        <h4>Quick Navigation</h4>
+        <h4 data-i18n="footerNavTitle">Quick Navigation</h4>
         <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us / Chef</a></li>
-          <li><a href="pickles.html">Pickles (ಉಪ್ಪಿನಕಾಯಿ)</a></li>
-          <li><a href="happalasandige.html">Happala / Sandige (ಹಪ್ಪಳ/ಸಂಡಿಗೆ)</a></li>
-          <li><a href="chillie-powder.html">Masala Powders (ಮಸಾಲೆ ಪುಡಿಗಳು)</a></li>
-          <li><a href="other-foods.html">Other Foods (ಇತರ ಆಹಾರಗಳು)</a></li>
-          <li><a href="contact.html">Contact Us (ಸಂಪರ್ಕಿಸಿ)</a></li>
-          <li><a href="feedback.html">Feedback (ಪ್ರತಿಕ್ರಿಯೆ)</a></li>
+          <li><a href="index.html" data-i18n="navHome">Home</a></li>
+          <li><a href="about.html" data-i18n="navAbout">About Us / Chef</a></li>
+          <li><a href="pickles.html" data-i18n="navPickles">Pickles</a></li>
+          <li><a href="happalasandige.html" data-i18n="navHappala">Happala / Sandige</a></li>
+          <li><a href="chillie-powder.html" data-i18n="navMasala">Masala Powders</a></li>
+          <li><a href="other-foods.html" data-i18n="navOther">Other Foods</a></li>
+          <li><a href="contact.html" data-i18n="navContact">Contact Us</a></li>
+          <li><a href="feedback.html" data-i18n="navFeedback">Feedback</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h4>Direct Calls & WhatsApp</h4>
+        <h4 data-i18n="footerCallsTitle">Direct Calls & WhatsApp</h4>
         <ul class="footer-contact-list">
           <li><strong>CALL G R SRINIVAS:</strong><br><a href="tel:+919972017010">+91 9972017010</a></li>
           <li><strong>CALL KARTHIK G S:</strong><br><a href="tel:+918197933637">+91 8197933637</a> (WhatsApp)</li>
@@ -471,7 +481,7 @@
       </div>
 
       <div class="footer-col">
-        <h4>Email & Address</h4>
+        <h4 data-i18n="footerEmailTitle">Email & Address</h4>
         <ul class="footer-contact-list">
           <li><strong>EMAIL KARTHIK:</strong><br><a href="mailto:karthikiyergs@gmail.com">karthikiyergs@gmail.com</a></li>
           <li><strong>EMAIL MANIKANTA:</strong><br><a href="mailto:manikantaiyer53@gmail.com">manikantaiyer53@gmail.com</a></li>

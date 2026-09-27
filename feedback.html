@@ -16,16 +16,26 @@
 </head>
 <body>
 
-  <!-- Top Notification & Contacts -->
+  <!-- Top Notification Bar with Contacts & Language/Theme Controls at the Right Top of the Whole Page -->
   <div class="top-notice-bar">
     <div class="top-bar-inner">
-      <div class="top-bar-left">
+      <div class="top-bar-left" data-i18n="topNotice">
         <span><i class="fa-solid fa-leaf"></i> 100% Traditional South Indian Vegetarian</span> • Direct from Gangapura, Kolar
       </div>
-      <div class="top-bar-contacts">
-        <a href="tel:+919972017010" class="top-contact-pill"><i class="fa-solid fa-phone"></i> Srinivas: 9972017010</a>
-        <a href="https://wa.me/918197933637" class="top-contact-pill"><i class="fa-brands fa-whatsapp"></i> Karthik: 8197933637</a>
-        <a href="https://wa.me/919880170209" class="top-contact-pill"><i class="fa-brands fa-whatsapp"></i> Manikanta: 9880170209</a>
+      <div class="top-bar-right">
+        <div class="top-bar-contacts">
+          <a href="tel:+919972017010" class="top-contact-pill"><i class="fa-solid fa-phone"></i> Srinivas: 9972017010</a>
+          <a href="https://wa.me/918197933637" class="top-contact-pill"><i class="fa-brands fa-whatsapp"></i> Karthik: 8197933637</a>
+          <a href="https://wa.me/919880170209" class="top-contact-pill"><i class="fa-brands fa-whatsapp"></i> Manikanta: 9880170209</a>
+        </div>
+        <div class="header-controls">
+          <button class="control-btn lang-toggle-btn" aria-label="Toggle Language" title="Change Language / ಭಾಷೆ ಬದಲಿಸಿ">
+            <i class="fa-solid fa-language"></i> <span class="lang-badge">ಕನ್ನಡ</span>
+          </button>
+          <button class="control-btn theme-toggle-btn" aria-label="Toggle Dark Mode" title="Toggle Dark/Light Mode">
+            <i class="fa-solid fa-moon theme-icon"></i> <span class="theme-text">Dark</span>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -36,8 +46,8 @@
       <a href="index.html" class="brand-link">
         <img src="assets/logo.png" alt="Sri Srinivasa Foods Logo" class="brand-logo-img">
         <div class="brand-text-wrap">
-          <span class="brand-name">Sri Srinivasa Foods</span>
-          <span class="brand-sub kannada-text">ಶ್ರೀ ಶ್ರೀನಿವಾಸ ಫುಡ್ಸ್</span>
+          <span class="brand-name" data-i18n="heroTitle">Sri Srinivasa Foods</span>
+          <span class="brand-sub kannada-text" data-i18n="brandSub">ಶ್ರೀ ಶ್ರೀನಿವಾಸ ಫುಡ್ಸ್</span>
         </div>
       </a>
 
@@ -47,15 +57,15 @@
 
       <nav>
         <ul class="nav-menu" id="navMenu">
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="about.html" class="nav-link">About Us / Chef</a></li>
-          <li><a href="pickles.html" class="nav-link">Pickles</a></li>
-          <li><a href="happalasandige.html" class="nav-link">Happala / Sandige</a></li>
-          <li><a href="chillie-powder.html" class="nav-link">Masala Powders</a></li>
-          <li><a href="other-foods.html" class="nav-link">Other Foods</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
-          <li><a href="feedback.html" class="nav-link active">Feedback</a></li>
-          <li><a href="order.html" class="nav-link nav-cta-btn"><i class="fa-solid fa-cart-shopping"></i> Order Now</a></li>
+          <li><a href="index.html" class="nav-link" data-i18n="navHome">Home</a></li>
+          <li><a href="about.html" class="nav-link" data-i18n="navAbout">About Us / Chef</a></li>
+          <li><a href="pickles.html" class="nav-link" data-i18n="navPickles">Pickles</a></li>
+          <li><a href="happalasandige.html" class="nav-link" data-i18n="navHappala">Happala / Sandige</a></li>
+          <li><a href="chillie-powder.html" class="nav-link" data-i18n="navMasala">Masala Powders</a></li>
+          <li><a href="other-foods.html" class="nav-link" data-i18n="navOther">Other Foods</a></li>
+          <li><a href="contact.html" class="nav-link" data-i18n="navContact">Contact</a></li>
+          <li><a href="feedback.html" class="nav-link active" data-i18n="navFeedback">Feedback</a></li>
+          <li><a href="order.html" class="nav-link nav-cta-btn" data-i18n="navOrderNow"><i class="fa-solid fa-cart-shopping"></i> Order Now</a></li>
         </ul>
       </nav>
     </div>
@@ -64,41 +74,41 @@
   <!-- Banner -->
   <div class="page-banner">
     <div class="page-banner-inner">
-      <h1>Customer Feedback & Reviews</h1>
-      <p class="kannada-subtitle kannada-text">ಗ್ರಾಹಕರ ಅನಿಸಿಕೆ ಮತ್ತು ಪ್ರತಿಕ್ರಿಯೆ</p>
+      <h1 data-en="Customer Feedback & Reviews" data-kn="ಗ್ರಾಹಕರ ಅನಿಸಿಕೆ ಮತ್ತು ಪ್ರತಿಕ್ರಿಯೆ">Customer Feedback & Reviews</h1>
+      <p class="kannada-subtitle kannada-text" data-en="We Value Your Opinion" data-kn="ಗ್ರಾಹಕರ ಅನಿಸಿಕೆ ಮತ್ತು ಪ್ರತಿಕ್ರಿಯೆ">ಗ್ರಾಹಕರ ಅನಿಸಿಕೆ ಮತ್ತು ಪ್ರತಿಕ್ರಿಯೆ</p>
       <div class="breadcrumb-nav">
-        <a href="index.html">Home</a> &nbsp;/&nbsp; Feedback (ಪ್ರತಿಕ್ರಿಯೆ)
+        <a href="index.html" data-i18n="navHome">Home</a> &nbsp;/&nbsp; <span data-i18n="navFeedback">Feedback (ಪ್ರತಿಕ್ರಿಯೆ)</span>
       </div>
     </div>
   </div>
 
   <main class="main-container">
     <div class="section-header">
-      <span class="section-tag">We Value Your Opinion</span>
-      <h2 class="section-title">Share Your Experience</h2>
-      <p class="section-subtitle">Your valuable thoughts help us continue crafting high-quality, pure homemade delicacies.</p>
+      <span class="section-tag" data-en="We Value Your Opinion" data-kn="ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಮುಖ್ಯ">We Value Your Opinion</span>
+      <h2 class="section-title" data-en="Share Your Experience" data-kn="ನಿಮ್ಮ ಅನುಭವ ಹಂಚಿಕೊಳ್ಳಿ">Share Your Experience</h2>
+      <p class="section-subtitle" data-en="Your valuable thoughts help us continue crafting high-quality, pure homemade delicacies." data-kn="ನಿಮ್ಮ ಅನಿಸಿಕೆಗಳು ನಮಗೆ ಇನ್ನಷ್ಟು ಗುಣಮಟ್ಟದ ಆಹಾರ ತಯಾರಿಸಲು ಸ್ಫೂರ್ತಿ ನೀಡುತ್ತವೆ.">Your valuable thoughts help us continue crafting high-quality, pure homemade delicacies.</p>
     </div>
 
     <div class="feedback-grid">
       <!-- Left Box: Contact & Message -->
       <div class="feedback-info-box">
-        <h3>We’d Love to Hear From You</h3>
-        <p style="margin-bottom: 20px; color: var(--text-muted);">
+        <h3 data-en="We’d Love to Hear From You" data-kn="ನಿಮ್ಮೊಂದಿಗೆ ಸಂವಹನ ನಮ್ಮ ಸಂತೋಷ">We’d Love to Hear From You</h3>
+        <p style="margin-bottom: 20px; color: var(--text-muted);" data-en="Whether it is about the authentic taste of our Mango Pickle, the crunch of Akki Happala, or new product suggestions, we appreciate every feedback." data-kn="ನಮ್ಮ ಉಪ್ಪಿನಕಾಯಿಯ ರುಚಿ, ಹಪ್ಪಳದ ಗರಿಗರಿತನ ಅಥವಾ ಹೊಸ ಉತ್ಪನ್ನಗಳ ಸಲಹೆಗಳ ಕುರಿತು ನಿಮ್ಮ ಅನಿಸಿಕೆಗಳನ್ನು ಮುಕ್ತವಾಗಿ ತಿಳಿಸಿ.">
           Whether it is about the authentic taste of our Mango Pickle, the crunch of Akki Happala, or new product suggestions, we appreciate every feedback.
         </p>
 
         <div class="address-item">
           <i class="fa-solid fa-star address-icon" style="color: #f59e0b;"></i>
           <div>
-            <strong>Quality Promise:</strong>
-            <p>100% natural, fresh spices, traditional hygiene & zero artificial colors.</p>
+            <strong data-en="Quality Promise:" data-kn="ಗುಣಮಟ್ಟದ ಭರವಸೆ:">Quality Promise:</strong>
+            <p data-en="100% natural, fresh spices, traditional hygiene & zero artificial colors." data-kn="100% ನೈಸರ್ಗಿಕ, ಶುದ್ಧ ಪದಾರ್ಥಗಳು ಹಾಗೂ ಸಾಂಪ್ರದಾಯಿಕ ನೈರ್ಮಲ್ಯ.">100% natural, fresh spices, traditional hygiene & zero artificial colors.</p>
           </div>
         </div>
 
         <div class="address-item">
           <i class="fa-solid fa-location-dot address-icon"></i>
           <div>
-            <strong>Address / ವಿಳಾಸ:</strong>
+            <strong data-i18n="addressLabel">Address / ವಿಳಾಸ:</strong>
             <p>GANGAPURA VILLAGE, CHAMARAHALLI POST,<br>KOLAR TALUK AND DISTRICT, KARNATAKA - 563101.</p>
           </div>
         </div>
@@ -106,14 +116,14 @@
         <div class="address-item">
           <i class="fa-brands fa-whatsapp address-icon" style="color: #25d366;"></i>
           <div>
-            <strong>Direct WhatsApp:</strong>
+            <strong data-i18n="whatsappLabel">Direct WhatsApp:</strong>
             <p><a href="https://wa.me/918197933637" target="_blank" rel="noopener" style="color: #15803d; font-weight: 600;">8197933637 (Karthik)</a> &nbsp;|&nbsp; <a href="https://wa.me/919880170209" target="_blank" rel="noopener" style="color: #15803d; font-weight: 600;">9880170209 (Manikanta)</a></p>
           </div>
         </div>
 
-        <div style="background: #fffbeb; border: 1px dashed #f59e0b; border-radius: 8px; padding: 16px; margin-top: 20px;">
-          <h4 style="color: #92400e; margin-bottom: 6px; font-size: 1.1rem;"><i class="fa-solid fa-heart" style="color: #dc2626;"></i> Chef Srinivasa's Message</h4>
-          <p style="font-size: 0.9rem; color: #78350f;">
+        <div style="background: var(--quote-bg); border: 1px dashed var(--accent-gold); border-radius: 8px; padding: 16px; margin-top: 20px;">
+          <h4 style="color: var(--accent-gold-dark); margin-bottom: 6px; font-size: 1.1rem;"><i class="fa-solid fa-heart" style="color: #dc2626;"></i> Chef Srinivasa's Message</h4>
+          <p style="font-size: 0.9rem; color: var(--text-main);" data-en="&quot;When I serve a bowl of a recipe, it contains my love, hard work, and passion for my profession. Thank you for making Sri Srinivasa Foods part of your home!&quot;" data-kn="&quot;ನಾನು ಸಿದ್ಧಪಡಿಸುವ ಪ್ರತಿಯೊಂದು ಪಾಕವಿಧಾನದಲ್ಲೂ ಪ್ರೀತಿ ಮತ್ತು ಕಾಳಜಿ ಅಡಗಿದೆ. ಶ್ರೀ ಶ್ರೀನಿವಾಸ ಫುಡ್ಸ್ ಅನ್ನು ನಿಮ್ಮ ಮನೆಯ ಸದಸ್ಯರಂತೆ ಸ್ವೀಕರಿಸಿದ್ದಕ್ಕಾಗಿ ಧನ್ಯವಾದಗಳು!&quot;">
             "When I serve a bowl of a recipe, it contains my love, hard work, and passion for my profession. Thank you for making Sri Srinivasa Foods part of your home!"
           </p>
         </div>
@@ -121,8 +131,8 @@
 
       <!-- Right Box: Embedded Feedback Form -->
       <div class="form-section-card" style="margin-top: 0;">
-        <h3 style="margin-bottom: 12px; color: var(--primary);">Submit Feedback Online</h3>
-        <p style="font-size: 0.92rem; color: var(--text-muted); margin-bottom: 16px;">
+        <h3 style="margin-bottom: 12px; color: var(--primary);" data-en="Submit Feedback Online" data-kn="ಆನ್‌ಲೈನ್ ಪ್ರತಿಕ್ರಿಯೆ ಸಲ್ಲಿಸಿ">Submit Feedback Online</h3>
+        <p style="font-size: 0.92rem; color: var(--text-muted); margin-bottom: 16px;" data-en="Please fill out the Google Form below:" data-kn="ದಯವಿಟ್ಟು ಕೆಳಗಿನ ಗೂಗಲ್ ಫಾರ್ಮ್ ಭರ್ತಿ ಮಾಡಿ:">
           Please fill out the Google Form below:
         </p>
         <div class="form-iframe-container" style="min-height: 650px;">
@@ -134,8 +144,8 @@
     <!-- Location Map -->
     <div style="margin-top: 50px;">
       <div class="section-header">
-        <span class="section-tag">Location</span>
-        <h2 class="section-title">Find Us in Gangapura, Kolar</h2>
+        <span class="section-tag" data-en="Location" data-kn="ಸ್ಥಳ">Location</span>
+        <h2 class="section-title" data-en="Find Us in Gangapura, Kolar" data-kn="ಕೋಲಾರದ ಗಂಗಾಪುರದಲ್ಲಿ ನಮ್ಮ ತಾಣ">Find Us in Gangapura, Kolar</h2>
       </div>
       <div class="map-card">
         <iframe 
@@ -148,7 +158,7 @@
     </div>
 
     <div style="text-align: center; margin-top: 30px;">
-      <a href="index.html" class="btn btn-outline-dark">
+      <a href="index.html" class="btn btn-outline-dark" data-i18n="backHomeBtn">
         <i class="fa-solid fa-arrow-left"></i> Back to Home
       </a>
     </div>
@@ -159,21 +169,21 @@
     <div class="footer-container">
       <div class="footer-col">
         <h4>Sri Srinivasa Foods</h4>
-        <p>Gangapura Village, Chamarahalli Post, Kolar Taluk & District, Karnataka-563101.</p>
+        <p data-i18n="footerDesc">Gangapura Village, Chamarahalli Post, Kolar Taluk & District, Karnataka-563101.</p>
       </div>
       <div class="footer-col">
-        <h4>Quick Navigation</h4>
+        <h4 data-i18n="footerNavTitle">Quick Navigation</h4>
         <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us / Chef</a></li>
-          <li><a href="pickles.html">Pickles</a></li>
-          <li><a href="happalasandige.html">Happala / Sandige</a></li>
-          <li><a href="chillie-powder.html">Masala Powders</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="index.html" data-i18n="navHome">Home</a></li>
+          <li><a href="about.html" data-i18n="navAbout">About Us / Chef</a></li>
+          <li><a href="pickles.html" data-i18n="navPickles">Pickles</a></li>
+          <li><a href="happalasandige.html" data-i18n="navHappala">Happala / Sandige</a></li>
+          <li><a href="chillie-powder.html" data-i18n="navMasala">Masala Powders</a></li>
+          <li><a href="contact.html" data-i18n="navContact">Contact Us</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Direct Calls</h4>
+        <h4 data-i18n="footerCallsTitle">Direct Calls</h4>
         <ul class="footer-contact-list">
           <li><strong>CALL G R SRINIVAS:</strong><br><a href="tel:+919972017010">+91 9972017010</a></li>
           <li><strong>CALL KARTHIK G S:</strong><br><a href="tel:+918197933637">+91 8197933637</a> (WhatsApp)</li>
@@ -181,7 +191,7 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Email & Address</h4>
+        <h4 data-i18n="footerEmailTitle">Email & Address</h4>
         <ul class="footer-contact-list">
           <li><strong>EMAIL KARTHIK:</strong><br><a href="mailto:karthikiyergs@gmail.com">karthikiyergs@gmail.com</a></li>
           <li><strong>EMAIL MANIKANTA:</strong><br><a href="mailto:manikantaiyer53@gmail.com">manikantaiyer53@gmail.com</a></li>

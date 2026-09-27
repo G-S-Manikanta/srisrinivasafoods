@@ -16,16 +16,26 @@
 </head>
 <body>
 
-  <!-- Top Notification & Quick Contacts -->
+  <!-- Top Notification Bar with Contacts & Language/Theme Controls at the Right Top of the Whole Page -->
   <div class="top-notice-bar">
     <div class="top-bar-inner">
-      <div class="top-bar-left">
+      <div class="top-bar-left" data-i18n="topNotice">
         <span><i class="fa-solid fa-leaf"></i> 100% Traditional South Indian Vegetarian</span> • Direct from Gangapura, Kolar
       </div>
-      <div class="top-bar-contacts">
-        <a href="tel:+919972017010" class="top-contact-pill"><i class="fa-solid fa-phone"></i> Srinivas: 9972017010</a>
-        <a href="https://wa.me/918197933637" class="top-contact-pill"><i class="fa-brands fa-whatsapp"></i> Karthik: 8197933637</a>
-        <a href="https://wa.me/919880170209" class="top-contact-pill"><i class="fa-brands fa-whatsapp"></i> Manikanta: 9880170209</a>
+      <div class="top-bar-right">
+        <div class="top-bar-contacts">
+          <a href="tel:+919972017010" class="top-contact-pill"><i class="fa-solid fa-phone"></i> Srinivas: 9972017010</a>
+          <a href="https://wa.me/918197933637" class="top-contact-pill"><i class="fa-brands fa-whatsapp"></i> Karthik: 8197933637</a>
+          <a href="https://wa.me/919880170209" class="top-contact-pill"><i class="fa-brands fa-whatsapp"></i> Manikanta: 9880170209</a>
+        </div>
+        <div class="header-controls">
+          <button class="control-btn lang-toggle-btn" aria-label="Toggle Language" title="Change Language / ಭಾಷೆ ಬದಲಿಸಿ">
+            <i class="fa-solid fa-language"></i> <span class="lang-badge">ಕನ್ನಡ</span>
+          </button>
+          <button class="control-btn theme-toggle-btn" aria-label="Toggle Dark Mode" title="Toggle Dark/Light Mode">
+            <i class="fa-solid fa-moon theme-icon"></i> <span class="theme-text">Dark</span>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -36,8 +46,8 @@
       <a href="index.html" class="brand-link">
         <img src="assets/logo.png" alt="Sri Srinivasa Foods Logo" class="brand-logo-img">
         <div class="brand-text-wrap">
-          <span class="brand-name">Sri Srinivasa Foods</span>
-          <span class="brand-sub kannada-text">ಶ್ರೀ ಶ್ರೀನಿವಾಸ ಫುಡ್ಸ್</span>
+          <span class="brand-name" data-i18n="heroTitle">Sri Srinivasa Foods</span>
+          <span class="brand-sub kannada-text" data-i18n="brandSub">ಶ್ರೀ ಶ್ರೀನಿವಾಸ ಫುಡ್ಸ್</span>
         </div>
       </a>
 
@@ -47,15 +57,15 @@
 
       <nav>
         <ul class="nav-menu" id="navMenu">
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="about.html" class="nav-link active">About Us / Chef</a></li>
-          <li><a href="pickles.html" class="nav-link">Pickles</a></li>
-          <li><a href="happalasandige.html" class="nav-link">Happala / Sandige</a></li>
-          <li><a href="chillie-powder.html" class="nav-link">Masala Powders</a></li>
-          <li><a href="other-foods.html" class="nav-link">Other Foods</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
-          <li><a href="feedback.html" class="nav-link">Feedback</a></li>
-          <li><a href="order.html" class="nav-link nav-cta-btn"><i class="fa-solid fa-cart-shopping"></i> Order Now</a></li>
+          <li><a href="index.html" class="nav-link" data-i18n="navHome">Home</a></li>
+          <li><a href="about.html" class="nav-link active" data-i18n="navAbout">About Us / Chef</a></li>
+          <li><a href="pickles.html" class="nav-link" data-i18n="navPickles">Pickles</a></li>
+          <li><a href="happalasandige.html" class="nav-link" data-i18n="navHappala">Happala / Sandige</a></li>
+          <li><a href="chillie-powder.html" class="nav-link" data-i18n="navMasala">Masala Powders</a></li>
+          <li><a href="other-foods.html" class="nav-link" data-i18n="navOther">Other Foods</a></li>
+          <li><a href="contact.html" class="nav-link" data-i18n="navContact">Contact</a></li>
+          <li><a href="feedback.html" class="nav-link" data-i18n="navFeedback">Feedback</a></li>
+          <li><a href="order.html" class="nav-link nav-cta-btn" data-i18n="navOrderNow"><i class="fa-solid fa-cart-shopping"></i> Order Now</a></li>
         </ul>
       </nav>
     </div>
@@ -64,10 +74,10 @@
   <!-- Banner -->
   <div class="page-banner">
     <div class="page-banner-inner">
-      <h1>Meet Our Chef & Our Heritage</h1>
-      <p class="kannada-subtitle kannada-text">ನಮ್ಮ ಬಾಣಸಿಗರ ಪರಿಚಯ ಮತ್ತು ಸಂಸ್ಥೆಯ ಪರಂಪರೆ</p>
+      <h1 data-en="Meet Our Chef & Our Heritage" data-kn="ನಮ್ಮ ಬಾಣಸಿಗರ ಪರಿಚಯ ಮತ್ತು ಸಂಸ್ಥೆಯ ಪರಂಪರೆ">Meet Our Chef & Our Heritage</h1>
+      <p class="kannada-subtitle kannada-text" data-en="Our Story & Tradition" data-kn="ನಮ್ಮ ಬಾಣಸಿಗರ ಪರಿಚಯ ಮತ್ತು ಸಂಸ್ಥೆಯ ಪರಂಪರೆ">ನಮ್ಮ ಬಾಣಸಿಗರ ಪರಿಚಯ ಮತ್ತು ಸಂಸ್ಥೆಯ ಪರಂಪರೆ</p>
       <div class="breadcrumb-nav">
-        <a href="index.html">Home</a> &nbsp;/&nbsp; About Us (ನಮ್ಮ ಬಗ್ಗೆ)
+        <a href="index.html" data-i18n="navHome">Home</a> &nbsp;/&nbsp; <span data-i18n="navAbout">About Us</span>
       </div>
     </div>
   </div>
@@ -77,27 +87,27 @@
     <!-- Chef Feature Card -->
     <div class="chef-profile-card">
       <div class="chef-photo-wrap">
-        <img src="assets/srinivasachef.jpeg" alt="Chef Srinivas G R" class="chef-photo">
+        <img src="assets/chef.jpg" alt="Chef Srinivas G R" class="chef-photo">
         <h3 class="chef-badge-name">G R Srinivas</h3>
-        <p class="chef-badge-title">Master Chef & Culinary Head</p>
+        <p class="chef-badge-title" data-en="Master Chef & Culinary Head" data-kn="ಮುಖ್ಯ ಬಾಣಸಿಗರು & ನಿರ್ದೇಶಕರು">Master Chef & Culinary Head</p>
         <div style="margin-top: 14px;">
           <a href="tel:+919972017010" class="btn btn-gold btn-sm"><i class="fa-solid fa-phone"></i> Call Srinivas G R</a>
         </div>
       </div>
 
       <div class="chef-story-wrap">
-        <span class="section-tag">Culinary Passion</span>
-        <h2>Meet Our Chef</h2>
+        <span class="section-tag" data-en="Culinary Passion" data-kn="ಪಾಕಶಾಲಾ ಪ್ರೀತಿ">Culinary Passion</span>
+        <h2 data-i18n="chefSectionTitle">Meet Our Chef</h2>
         
-        <p>
+        <p data-i18n="chefStory">
           With a passion towards cooking, <strong>I Srinivas G R</strong> started my journey as a chef. Cooking is something that makes me happy and I love cooking for others. I always wanted to be a chef and I really worked hard. It is a very nice profession where you can learn new things daily. When I serve a bowl of a recipe, it contains my love, hard work, and passion for my profession.
         </p>
 
-        <blockquote>
+        <blockquote data-i18n="chefQuote">
           "Food is something that gives us nutrition, and all of us know how nutritious it is to have bitter gourd. But there are very few of us who like it and most children run away when their mother cooks bitter gourd. So, how can a mother convince them to eat? All she can do is cook it in such a way that their child would love to eat it. It is not less than magic to turn bitter gourd into a delicious recipe. And this chef is a person who has a perfect solution for this."
         </blockquote>
 
-        <p>
+        <p data-en="At Sri Srinivasa Foods, we bring that same culinary magic and deep reverence into every batch of pickles, freshly ground spice powders, crispy sun-dried sandiges, and authentic tokku. Rooted in traditional Karnataka Brahmin vegetarian culinary heritage, every recipe is crafted purely with natural ingredients, cold-pressed oils, and age-old sun-drying techniques." data-kn="ಶ್ರೀ ಶ್ರೀನಿವಾಸ ಫುಡ್ಸ್‌ನಲ್ಲಿ ನಾವು ಅದೇ ಪಾಕಶಾಲಾ ಪರಿಣತಿಯೊಂದಿಗೆ ಪ್ರತಿಯೊಂದು ಉಪ್ಪಿನಕಾಯಿ, ಪರಿಮಳಯುಕ್ತ ಮಸಾಲೆ ಪುಡಿಗಳು, ಗರಿಗರಿಯಾದ ಸಂಡಿಗೆ ಮತ್ತು ಅಪ್ಪಟ ತೊಕ್ಕುಗಳನ್ನು ಸಿದ್ಧಪಡಿಸುತ್ತೇವೆ. ಕರ್ನಾಟಕದ ಸಾಂಪ್ರದಾಯಿಕ ಬ್ರಾಹ್ಮಣ ಸಸ್ಯಾಹಾರಿ ಶೈಲಿಯಲ್ಲಿ, ಶುದ್ಧ ಎಣ್ಣೆ ಮತ್ತು ನೈಸರ್ಗಿಕ ವಿಧಾನಗಳಲ್ಲಿ ತಯಾರಿಸಲಾಗುತ್ತದೆ.">
           At <strong>Sri Srinivasa Foods</strong>, we bring that same culinary magic and deep reverence into every batch of pickles, freshly ground spice powders, crispy sun-dried sandiges, and authentic tokku. Rooted in traditional Karnataka Brahmin vegetarian culinary heritage, every recipe is crafted purely with natural ingredients, cold-pressed oils, and age-old sun-drying techniques.
         </p>
       </div>
@@ -106,47 +116,47 @@
     <!-- Core Values Section -->
     <div style="margin-top: 50px;">
       <div class="section-header">
-        <span class="section-tag">Our Promise</span>
-        <h2 class="section-title">Why Choose Sri Srinivasa Foods?</h2>
-        <p class="section-subtitle">Authentic satvik preparation prepared with utmost purity, cleanliness, and love.</p>
+        <span class="section-tag" data-en="Our Promise" data-kn="ನಮ್ಮ ಭರವಸೆ">Our Promise</span>
+        <h2 class="section-title" data-en="Why Choose Sri Srinivasa Foods?" data-kn="ಶ್ರೀ ಶ್ರೀನಿವಾಸ ಫುಡ್ಸ್ ಏಕೆ ಆರಿಸಬೇಕು?">Why Choose Sri Srinivasa Foods?</h2>
+        <p class="section-subtitle" data-en="Authentic satvik preparation prepared with utmost purity, cleanliness, and love." data-kn="ಅತ್ಯುನ್ನತ ಶುಚಿತ್ವ, ಪಾವಿತ್ರ್ಯ ಮತ್ತು ಪ್ರೀತಿಯಿಂದ ಸಿದ್ಧಪಡಿಸಲಾದ ಸಾತ್ವಿಕ ಸಸ್ಯಾಹಾರಿ ಆಹಾರ.">Authentic satvik preparation prepared with utmost purity, cleanliness, and love.</p>
       </div>
 
       <div class="category-grid">
         <div class="category-card" style="padding: 24px;">
           <div class="category-icon">🌿</div>
-          <h3>100% Pure & Vegetarian</h3>
-          <p>Strictly vegetarian and prepared following orthodox cleanliness and satvik culinary traditions.</p>
+          <h3 data-en="100% Pure & Vegetarian" data-kn="100% ಶುದ್ಧ ಸಸ್ಯಾಹಾರಿ">100% Pure & Vegetarian</h3>
+          <p data-en="Strictly vegetarian and prepared following orthodox cleanliness and satvik culinary traditions." data-kn="ಸಾಂಪ್ರದಾಯಿಕ ಶುಚಿತ್ವ ಮತ್ತು ಸಾತ್ವಿಕ ನಿಯಮಗಳನ್ನು ಪಾಲಿಸಿ ಸಿದ್ಧಪಡಿಸಲಾಗಿದೆ.">Strictly vegetarian and prepared following orthodox cleanliness and satvik culinary traditions.</p>
         </div>
 
         <div class="category-card" style="padding: 24px;">
           <div class="category-icon">☀️</div>
-          <h3>Naturally Sun-Dried</h3>
-          <p>Our Happala and Sandiges are prepared from pure rice and sago, sun-cured naturally on terrace clean sheets.</p>
+          <h3 data-en="Naturally Sun-Dried" data-kn="ನೈಸರ್ಗಿಕವಾಗಿ ಬಿಸಿಲಿನಲ್ಲಿ ಒಣಗಿಸಿದ">Naturally Sun-Dried</h3>
+          <p data-en="Our Happala and Sandiges are prepared from pure rice and sago, sun-cured naturally on terrace clean sheets." data-kn="ನಮ್ಮ ಹಪ್ಪಳ ಮತ್ತು ಸಂಡಿಗೆಗಳು ನೈಸರ್ಗಿಕ ಸೂರ್ಯನ ಬಿಸಿಲಿನಲ್ಲಿ ಒಣಗಿಸಿ ಗರಿಗರಿಯಾಗಿರುತ್ತವೆ.">Our Happala and Sandiges are prepared from pure rice and sago, sun-cured naturally on terrace clean sheets.</p>
         </div>
 
         <div class="category-card" style="padding: 24px;">
           <div class="category-icon">🏺</div>
-          <h3>Aged in Ceramic Jaadis</h3>
-          <p>Pickles cured in traditional ceramic jars (Bharanis) with unrefined cold-pressed oils and roasted mustard.</p>
+          <h3 data-en="Aged in Ceramic Jaadis" data-kn="ಜೇಡಿ ಭರಣಿಗಳಲ್ಲಿ ಹದಮಾಡಿದ">Aged in Ceramic Jaadis</h3>
+          <p data-en="Pickles cured in traditional ceramic jars (Bharanis) with unrefined cold-pressed oils and roasted mustard." data-kn="ಉಪ್ಪಿನಕಾಯಿಗಳನ್ನು ಅಪ್ಪಟ ಮಣ್ಣಿನ ಹಾಗೂ ಜೇಡಿ ಭರಣಿಗಳಲ್ಲಿ ಹದಗೊಳಿಸಲಾಗುತ್ತದೆ.">Pickles cured in traditional ceramic jars (Bharanis) with unrefined cold-pressed oils and roasted mustard.</p>
         </div>
 
         <div class="category-card" style="padding: 24px;">
           <div class="category-icon">🚫</div>
-          <h3>Zero Artificial Colors</h3>
-          <p>No synthetic preservatives, no artificial chemical additives, and no adulteration. Purely homemade.</p>
+          <h3 data-en="Zero Artificial Colors" data-kn="ಯಾವುದೇ ಕೃತಕ ಬಣ್ಣಗಳಿಲ್ಲ">Zero Artificial Colors</h3>
+          <p data-en="No synthetic preservatives, no artificial chemical additives, and no adulteration. Purely homemade." data-kn="ಯಾವುದೇ ಕೃತಕ ಬಣ್ಣ, ರಾಸಾಯನಿಕ ಅಥವಾ ಸಂರಕ್ಷಕಗಳಿಲ್ಲದೆ ಅಪ್ಪಟ ನೈಸರ್ಗಿಕವಾಗಿ ತಯಾರಿಸಲಾಗಿದೆ.">No synthetic preservatives, no artificial chemical additives, and no adulteration. Purely homemade.</p>
         </div>
       </div>
     </div>
 
     <!-- Contact & Order CTA -->
-    <div style="text-align: center; margin-top: 20px; background: #ffffff; border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 30px;">
-      <h3 style="color: var(--primary); margin-bottom: 10px;">Taste the Difference of Traditional Flavors</h3>
-      <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 20px;">
+    <div style="text-align: center; margin-top: 20px; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 30px;">
+      <h3 style="color: var(--primary); margin-bottom: 10px;" data-en="Taste the Difference of Traditional Flavors" data-kn="ಸಾಂಪ್ರದಾಯಿಕ ರುಚಿಯ ಅನುಭವ ಪಡೆಯಿರಿ">Taste the Difference of Traditional Flavors</h3>
+      <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 20px;" data-en="Order your favorite pickles, spice powders, and sandige today. We prepare fresh batches on requirement." data-kn="ನಿಮಗೆ ಬೇಕಾದ ಉಪ್ಪಿನಕಾಯಿ, ಮಸಾಲೆ ಪುಡಿಗಳು ಹಾಗೂ ಸಂಡಿಗೆಗಳನ್ನು ಇಂದೇ ಆರ್ಡರ್ ಮಾಡಿ.">
         Order your favorite pickles, spice powders, and sandige today. We prepare fresh batches on requirement.
       </p>
       <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
-        <a href="order.html" class="btn btn-gold"><i class="fa-solid fa-cart-shopping"></i> Place an Order</a>
-        <a href="contact.html" class="btn btn-primary"><i class="fa-solid fa-address-book"></i> View Contact Details</a>
+        <a href="order.html" class="btn btn-gold" data-i18n="navOrderNow"><i class="fa-solid fa-cart-shopping"></i> Place an Order</a>
+        <a href="contact.html" class="btn btn-primary" data-i18n="navContact"><i class="fa-solid fa-address-book"></i> View Contact Details</a>
       </div>
     </div>
 
@@ -157,7 +167,7 @@
     <div class="footer-container">
       <div class="footer-col">
         <h4>Sri Srinivasa Foods</h4>
-        <p>
+        <p data-i18n="footerDesc">
           Authentic Karnataka homemade pickles, spice powders, happala, sandige, and tokku prepared by Chef Srinivas G R.
         </p>
         <p class="kannada-text" style="color: #fde68a; margin-top: 8px;">
@@ -166,19 +176,19 @@
       </div>
 
       <div class="footer-col">
-        <h4>Quick Links</h4>
+        <h4 data-i18n="footerNavTitle">Quick Links</h4>
         <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us / Chef</a></li>
-          <li><a href="pickles.html">Pickles</a></li>
-          <li><a href="happalasandige.html">Happala / Sandige</a></li>
-          <li><a href="chillie-powder.html">Masala Powders</a></li>
-          <li><a href="other-foods.html">Other Foods</a></li>
+          <li><a href="index.html" data-i18n="navHome">Home</a></li>
+          <li><a href="about.html" data-i18n="navAbout">About Us / Chef</a></li>
+          <li><a href="pickles.html" data-i18n="navPickles">Pickles</a></li>
+          <li><a href="happalasandige.html" data-i18n="navHappala">Happala / Sandige</a></li>
+          <li><a href="chillie-powder.html" data-i18n="navMasala">Masala Powders</a></li>
+          <li><a href="other-foods.html" data-i18n="navOther">Other Foods</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h4>Direct Contact</h4>
+        <h4 data-i18n="footerCallsTitle">Direct Contact</h4>
         <ul class="footer-contact-list">
           <li><strong>CALL G R SRINIVAS:</strong><br><a href="tel:+919972017010">+91 9972017010</a></li>
           <li><strong>CALL KARTHIK G S:</strong><br><a href="tel:+918197933637">+91 8197933637</a> (WhatsApp)</li>
@@ -187,7 +197,7 @@
       </div>
 
       <div class="footer-col">
-        <h4>Email & Address</h4>
+        <h4 data-i18n="footerEmailTitle">Email & Address</h4>
         <ul class="footer-contact-list">
           <li><strong>EMAIL KARTHIK:</strong><br><a href="mailto:karthikiyergs@gmail.com">karthikiyergs@gmail.com</a></li>
           <li><strong>EMAIL MANIKANTA:</strong><br><a href="mailto:manikantaiyer53@gmail.com">manikantaiyer53@gmail.com</a></li>

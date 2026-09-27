@@ -16,16 +16,26 @@
 </head>
 <body>
 
-  <!-- Top Notification & Contacts -->
+  <!-- Top Notification Bar with Contacts & Language/Theme Controls at the Right Top of the Whole Page -->
   <div class="top-notice-bar">
     <div class="top-bar-inner">
-      <div class="top-bar-left">
+      <div class="top-bar-left" data-i18n="topNotice">
         <span><i class="fa-solid fa-leaf"></i> 100% Traditional South Indian Vegetarian</span> • Direct from Gangapura, Kolar
       </div>
-      <div class="top-bar-contacts">
-        <a href="tel:+919972017010" class="top-contact-pill"><i class="fa-solid fa-phone"></i> Srinivas: 9972017010</a>
-        <a href="https://wa.me/918197933637" class="top-contact-pill"><i class="fa-brands fa-whatsapp"></i> Karthik: 8197933637</a>
-        <a href="https://wa.me/919880170209" class="top-contact-pill"><i class="fa-brands fa-whatsapp"></i> Manikanta: 9880170209</a>
+      <div class="top-bar-right">
+        <div class="top-bar-contacts">
+          <a href="tel:+919972017010" class="top-contact-pill"><i class="fa-solid fa-phone"></i> Srinivas: 9972017010</a>
+          <a href="https://wa.me/918197933637" class="top-contact-pill"><i class="fa-brands fa-whatsapp"></i> Karthik: 8197933637</a>
+          <a href="https://wa.me/919880170209" class="top-contact-pill"><i class="fa-brands fa-whatsapp"></i> Manikanta: 9880170209</a>
+        </div>
+        <div class="header-controls">
+          <button class="control-btn lang-toggle-btn" aria-label="Toggle Language" title="Change Language / ಭಾಷೆ ಬದಲಿಸಿ">
+            <i class="fa-solid fa-language"></i> <span class="lang-badge">ಕನ್ನಡ</span>
+          </button>
+          <button class="control-btn theme-toggle-btn" aria-label="Toggle Dark Mode" title="Toggle Dark/Light Mode">
+            <i class="fa-solid fa-moon theme-icon"></i> <span class="theme-text">Dark</span>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -36,8 +46,8 @@
       <a href="index.html" class="brand-link">
         <img src="assets/logo.png" alt="Sri Srinivasa Foods Logo" class="brand-logo-img">
         <div class="brand-text-wrap">
-          <span class="brand-name">Sri Srinivasa Foods</span>
-          <span class="brand-sub kannada-text">ಶ್ರೀ ಶ್ರೀನಿವಾಸ ಫುಡ್ಸ್</span>
+          <span class="brand-name" data-i18n="heroTitle">Sri Srinivasa Foods</span>
+          <span class="brand-sub kannada-text" data-i18n="brandSub">ಶ್ರೀ ಶ್ರೀನಿವಾಸ ಫುಡ್ಸ್</span>
         </div>
       </a>
 
@@ -47,15 +57,15 @@
 
       <nav>
         <ul class="nav-menu" id="navMenu">
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="about.html" class="nav-link">About Us / Chef</a></li>
-          <li><a href="pickles.html" class="nav-link">Pickles</a></li>
-          <li><a href="happalasandige.html" class="nav-link active">Happala / Sandige</a></li>
-          <li><a href="chillie-powder.html" class="nav-link">Masala Powders</a></li>
-          <li><a href="other-foods.html" class="nav-link">Other Foods</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
-          <li><a href="feedback.html" class="nav-link">Feedback</a></li>
-          <li><a href="order.html" class="nav-link nav-cta-btn"><i class="fa-solid fa-cart-shopping"></i> Order Now</a></li>
+          <li><a href="index.html" class="nav-link" data-i18n="navHome">Home</a></li>
+          <li><a href="about.html" class="nav-link" data-i18n="navAbout">About Us / Chef</a></li>
+          <li><a href="pickles.html" class="nav-link" data-i18n="navPickles">Pickles</a></li>
+          <li><a href="happalasandige.html" class="nav-link active" data-i18n="navHappala">Happala / Sandige</a></li>
+          <li><a href="chillie-powder.html" class="nav-link" data-i18n="navMasala">Masala Powders</a></li>
+          <li><a href="other-foods.html" class="nav-link" data-i18n="navOther">Other Foods</a></li>
+          <li><a href="contact.html" class="nav-link" data-i18n="navContact">Contact</a></li>
+          <li><a href="feedback.html" class="nav-link" data-i18n="navFeedback">Feedback</a></li>
+          <li><a href="order.html" class="nav-link nav-cta-btn" data-i18n="navOrderNow"><i class="fa-solid fa-cart-shopping"></i> Order Now</a></li>
         </ul>
       </nav>
     </div>
@@ -64,10 +74,10 @@
   <!-- Banner -->
   <div class="page-banner">
     <div class="page-banner-inner">
-      <h1>Happala & Sandige Varieties</h1>
-      <p class="kannada-subtitle kannada-text">ಹಪ್ಪಳ ಮತ್ತು ಸಂಡಿಗೆ - ಗರಿಗರಿಯಾದ ಸಾಂಪ್ರದಾಯಿಕ ತಿಂಡಿಗಳು</p>
+      <h1 data-en="Happala & Sandige Varieties" data-kn="ಹಪ್ಪಳ ಮತ್ತು ಸಂಡಿಗೆ ವಿಧಗಳು">Happala & Sandige Varieties</h1>
+      <p class="kannada-subtitle kannada-text" data-en="Crispy Traditional Snacks" data-kn="ಹಪ್ಪಳ ಮತ್ತು ಸಂಡಿಗೆ - ಗರಿಗರಿಯಾದ ಸಾಂಪ್ರದಾಯಿಕ ತಿಂಡಿಗಳು">ಹಪ್ಪಳ ಮತ್ತು ಸಂಡಿಗೆ - ಗರಿಗರಿಯಾದ ಸಾಂಪ್ರದಾಯಿಕ ತಿಂಡಿಗಳು</p>
       <div class="breadcrumb-nav">
-        <a href="index.html">Home</a> &nbsp;/&nbsp; Happala / Sandige (ಹಪ್ಪಳ/ಸಂಡಿಗೆ)
+        <a href="index.html" data-i18n="navHome">Home</a> &nbsp;/&nbsp; <span data-i18n="navHappala">Happala / Sandige (ಹಪ್ಪಳ/ಸಂಡಿಗೆ)</span>
       </div>
     </div>
   </div>
@@ -78,19 +88,19 @@
     <div class="category-visual-banner">
       <img src="assets/sandige_happala.jpg" alt="Sun-Dried Happala and Sandige" class="category-visual-img">
       <div class="category-visual-content">
-        <span class="section-tag">Pure Sun-Dried Goodness</span>
-        <h2>Naturally Sun-Cured Delicacies</h2>
-        <p>
+        <span class="section-tag" data-en="Pure Sun-Dried Goodness" data-kn="ಬಿಸಿಲಿನಲ್ಲಿ ಒಣಗಿಸಿದ ನೈಜ ರುಚಿ">Pure Sun-Dried Goodness</span>
+        <h2 data-en="Naturally Sun-Cured Delicacies" data-kn="ನೈಸರ್ಗಿಕವಾಗಿ ಒಣಗಿಸಿದ ಗರಿಗರಿ ತಿಂಡಿಗಳು">Naturally Sun-Cured Delicacies</h2>
+        <p data-en="Handmade following traditional recipes. Naturally dried in clean sunny terraces to achieve maximum crispness and authentic taste when deep-fried." data-kn="ಸಾಂಪ್ರದಾಯಿಕ ವಿಧಾನದಲ್ಲಿ ತಯಾರಿಸಿ, ಶುದ್ಧ ಬಿಸಿಲಿನಲ್ಲಿ ಒಣಗಿಸಲಾಗುತ್ತದೆ. ಎಣ್ಣೆಯಲ್ಲಿ ಕರೆದಾಗ ಬಾಯಲ್ಲಿ ಕರಗುವ ಗರಿಗರಿ ರುಚಿ.">
           Handmade following traditional recipes. Naturally dried in clean sunny terraces to achieve maximum crispness and authentic taste when deep-fried.
         </p>
-        <a href="#happala-form" class="btn btn-gold"><i class="fa-solid fa-cart-shopping"></i> Order Sandige Online</a>
+        <a href="#happala-form" class="btn btn-gold" data-en="Order Sandige Online" data-kn="ಸಂಡಿಗೆ ಆರ್ಡರ್ ಮಾಡಿ"><i class="fa-solid fa-cart-shopping"></i> Order Sandige Online</a>
       </div>
     </div>
 
     <div class="section-header">
-      <span class="section-tag">Crispy & Sun-Dried</span>
-      <h2 class="section-title">Our Happala & Sandige Menu & Prices</h2>
-      <p class="section-subtitle">Naturally sun-dried under hygienic conditions for crunch and flavor.</p>
+      <span class="section-tag" data-en="Crispy & Sun-Dried" data-kn="ಗರಿಗರಿ ಸಂಡಿಗೆಗಳು">Crispy & Sun-Dried</span>
+      <h2 class="section-title" data-en="Our Happala & Sandige Menu & Prices" data-kn="ಹಪ್ಪಳ & ಸಂಡಿಗೆ ಮೆನು ಮತ್ತು ದರ">Our Happala & Sandige Menu & Prices</h2>
+      <p class="section-subtitle" data-en="Naturally sun-dried under hygienic conditions for crunch and flavor." data-kn="ಅತ್ಯುತ್ತಮ ನೈರ್ಮಲ್ಯ ಮತ್ತು ಗರಿಗರಿ ರುಚಿಯ ಭರವಸೆ.">Naturally sun-dried under hygienic conditions for crunch and flavor.</p>
     </div>
 
     <!-- Product Grid with Updated Items & Prices -->
@@ -104,11 +114,11 @@
           </div>
           <h3 class="product-title">Akki Happala (Rice Papad)</h3>
           <div class="product-kannada kannada-text">ಅಕ್ಕಿ ಹಪ್ಪಳ</div>
-          <p class="product-desc">Crisp, wafer-thin rice papads seasoned with cumin, green chillies, and asafoetida. Perfect lunch accompaniment.</p>
+          <p class="product-desc" data-en="Crisp, wafer-thin rice papads seasoned with cumin, green chillies, and asafoetida. Perfect lunch accompaniment." data-kn="ಜೀರಿಗೆ, ಹಸಿಮೆಣಸಿನಕಾಯಿ ಮತ್ತು ಇಂಗಿನ ಘಮಲಿನೊಂದಿಗೆ ಸಿದ್ಧಪಡಿಸಿದ ಗರಿಗರಿ ಅಕ್ಕಿ ಹಪ್ಪಳ.">Crisp, wafer-thin rice papads seasoned with cumin, green chillies, and asafoetida. Perfect lunch accompaniment.</p>
         </div>
         <div class="product-footer">
           <span class="product-price">₹ 150 / 100 no</span>
-          <a href="https://forms.gle/yGvQCSswVjndcaBt8" target="_blank" class="btn btn-primary btn-sm"><i class="fa-solid fa-bag-shopping"></i> Order Now</a>
+          <a href="#happala-form" class="btn btn-primary btn-sm" data-en="Order Now" data-kn="ಆರ್ಡರ್ ಮಾಡಿ"><i class="fa-solid fa-bag-shopping"></i> Order Now</a>
         </div>
       </div>
 
@@ -121,11 +131,11 @@
           </div>
           <h3 class="product-title">Peni (Shavige) Sandige</h3>
           <div class="product-kannada kannada-text">ಪೆಣಿ (ಶಾವಿಗೆ) ಸಂಡಿಗೆ</div>
-          <p class="product-desc">Delicate vermicelli-shaped rice sandige that puffs up light, crispy, and melts in the mouth when fried.</p>
+          <p class="product-desc" data-en="Delicate vermicelli-shaped rice sandige that puffs up light, crispy, and melts in the mouth when fried." data-kn="ಎಣ್ಣೆಯಲ್ಲಿ ಕರೆದಾಗ ಹೂವಿನಂತೆ ಅರಳಿ ಬಾಯಲ್ಲಿ ಕರಗುವ ಶಾವಿಗೆ ಶೈಲಿಯ ಪೆಣಿ ಸಂಡಿಗೆ.">Delicate vermicelli-shaped rice sandige that puffs up light, crispy, and melts in the mouth when fried.</p>
         </div>
         <div class="product-footer">
           <span class="product-price">₹ 150 / kg</span>
-          <a href="https://forms.gle/yGvQCSswVjndcaBt8" target="_blank" class="btn btn-primary btn-sm"><i class="fa-solid fa-bag-shopping"></i> Order Now</a>
+          <a href="#happala-form" class="btn btn-primary btn-sm" data-en="Order Now" data-kn="ಆರ್ಡರ್ ಮಾಡಿ"><i class="fa-solid fa-bag-shopping"></i> Order Now</a>
         </div>
       </div>
 
@@ -138,15 +148,15 @@
           </div>
           <h3 class="product-title">Sabakki Sandige (Sago Fryums)</h3>
           <div class="product-kannada kannada-text">ಸಬ್ಬಕ್ಕಿ ಸಂಡಿಗೆ</div>
-          <p class="product-desc">Made from pure tapioca sago pearls and mild spices. Crunchy, golden, and loved by kids and adults alike.</p>
+          <p class="product-desc" data-en="Made from pure tapioca sago pearls and mild spices. Crunchy, golden, and loved by kids and adults alike." data-kn="ಶುದ್ಧ ಸಬ್ಬಕ್ಕಿ ಮುತ್ತುಗಳಿಂದ ತಯಾರಿಸಿದ ಗರಿಗರಿಯಾದ ಸಾಂಪ್ರದಾಯಿಕ ಸಂಡಿಗೆ.">Made from pure tapioca sago pearls and mild spices. Crunchy, golden, and loved by kids and adults alike.</p>
         </div>
         <div class="product-footer">
           <span class="product-price">₹ 250 / kg</span>
-          <a href="https://forms.gle/yGvQCSswVjndcaBt8" target="_blank" class="btn btn-primary btn-sm"><i class="fa-solid fa-bag-shopping"></i> Order Now</a>
+          <a href="#happala-form" class="btn btn-primary btn-sm" data-en="Order Now" data-kn="ಆರ್ಡರ್ ಮಾಡಿ"><i class="fa-solid fa-bag-shopping"></i> Order Now</a>
         </div>
       </div>
 
-      <!-- 4. Haralu Sandige (Updated) -->
+      <!-- 4. Haralu Sandige -->
       <div class="product-item-card">
         <div>
           <div class="product-top">
@@ -155,11 +165,11 @@
           </div>
           <h3 class="product-title">Haralu Sandige</h3>
           <div class="product-kannada kannada-text">ಹರಳು ಸಂಡಿಗೆ</div>
-          <p class="product-desc">Traditional granule-style spiced sun-dried sandige with supreme crunch and flavor. Excellent with rasam rice.</p>
+          <p class="product-desc" data-en="Traditional granule-style spiced sun-dried sandige with supreme crunch and flavor. Excellent with rasam rice." data-kn="ರಸಂ ಅನ್ನ, ಮಜ್ಜಿಗೆ ಅನ್ನಕ್ಕೆ ಅತ್ಯುತ್ತಮ ಸಾಥ್ ನೀಡುವ ವಿಶೇಷ ಹರಳು ಸಂಡಿಗೆ.">Traditional granule-style spiced sun-dried sandige with supreme crunch and flavor. Excellent with rasam rice.</p>
         </div>
         <div class="product-footer">
           <span class="product-price">₹ 450 / kg</span>
-          <a href="https://forms.gle/yGvQCSswVjndcaBt8" target="_blank" class="btn btn-primary btn-sm"><i class="fa-solid fa-bag-shopping"></i> Order Now</a>
+          <a href="#happala-form" class="btn btn-primary btn-sm" data-en="Order Now" data-kn="ಆರ್ಡರ್ ಮಾಡಿ"><i class="fa-solid fa-bag-shopping"></i> Order Now</a>
         </div>
       </div>
 
@@ -172,11 +182,11 @@
           </div>
           <h3 class="product-title">Kolu Sandige (Stick Fryums)</h3>
           <div class="product-kannada kannada-text">ಕೋಲು ಸಂಡಿಗೆ</div>
-          <p class="product-desc">Traditional hollow stick-shaped crunchy fryums with a rich spiced aroma when deep fried.</p>
+          <p class="product-desc" data-en="Traditional hollow stick-shaped crunchy fryums with a rich spiced aroma when deep fried." data-kn="ಕೋಲಿನ ಆಕಾರದ ಸಾಂಪ್ರದಾಯಿಕ ಗರಿಗರಿ ಸಂಡಿಗೆ.">Traditional hollow stick-shaped crunchy fryums with a rich spiced aroma when deep fried.</p>
         </div>
         <div class="product-footer">
           <span class="product-price">₹ 150 / kg</span>
-          <a href="https://forms.gle/yGvQCSswVjndcaBt8" target="_blank" class="btn btn-primary btn-sm"><i class="fa-solid fa-bag-shopping"></i> Order Now</a>
+          <a href="#happala-form" class="btn btn-primary btn-sm" data-en="Order Now" data-kn="ಆರ್ಡರ್ ಮಾಡಿ"><i class="fa-solid fa-bag-shopping"></i> Order Now</a>
         </div>
       </div>
 
@@ -189,11 +199,11 @@
           </div>
           <h3 class="product-title">Potato Chips</h3>
           <div class="product-kannada kannada-text">ಆಲೂಗಡ್ಡೆ ಚಿಪ್ಸ್</div>
-          <p class="product-desc">Fresh, thinly sliced potatoes sun-cured and salted for an irresistible homemade crispness.</p>
+          <p class="product-desc" data-en="Fresh, thinly sliced potatoes sun-cured and salted for an irresistible homemade crispness." data-kn="ತಾಜಾ ಆಲೂಗಡ್ಡೆಯನ್ನು ತೆಳುವಾಗಿ ಕತ್ತರಿಸಿ ಬಿಸಿಲಿನಲ್ಲಿ ಒಣಗಿಸಿ ಸಿದ್ಧಪಡಿಸಿದ ಹೋಮ್‌ಮೇಡ್ ಚಿಪ್ಸ್.">Fresh, thinly sliced potatoes sun-cured and salted for an irresistible homemade crispness.</p>
         </div>
         <div class="product-footer">
           <span class="product-price">₹ 250 / kg</span>
-          <a href="https://forms.gle/yGvQCSswVjndcaBt8" target="_blank" class="btn btn-primary btn-sm"><i class="fa-solid fa-bag-shopping"></i> Order Now</a>
+          <a href="#happala-form" class="btn btn-primary btn-sm" data-en="Order Now" data-kn="ಆರ್ಡರ್ ಮಾಡಿ"><i class="fa-solid fa-bag-shopping"></i> Order Now</a>
         </div>
       </div>
     </div>
@@ -201,9 +211,9 @@
     <!-- Embedded Google Form -->
     <section id="happala-form" class="form-section-card" style="margin-top: 50px;">
       <div class="section-header" style="margin-bottom: 20px;">
-        <span class="section-tag">Direct Order</span>
-        <h2 class="section-title">Submit Happala & Sandige Requirement</h2>
-        <p class="section-subtitle">Fill in the Google Form below to place your order with quantities required.</p>
+        <span class="section-tag" data-en="Direct Order" data-kn="ಆರ್ಡರ್ ಫಾರ್ಮ್">Direct Order</span>
+        <h2 class="section-title" data-en="Submit Happala & Sandige Requirement" data-kn="ಹಪ್ಪಳ & ಸಂಡಿಗೆ ಬೇಡಿಕೆಯನ್ನು ಸಲ್ಲಿಸಿ">Submit Happala & Sandige Requirement</h2>
+        <p class="section-subtitle" data-en="Fill in the Google Form below to place your order with quantities required." data-kn="ನಿಮಗೆ ಅಗತ್ಯವಿರುವ ಪ್ರಮಾಣವನ್ನು ಕೆಳಗಿನ ಗೂಗಲ್ ಫಾರ್ಮ್‌ನಲ್ಲಿ ಭರ್ತಿ ಮಾಡಿ.">Fill in the Google Form below to place your order with quantities required.</p>
       </div>
 
       <div class="form-iframe-container">
@@ -212,7 +222,7 @@
     </section>
 
     <div style="text-align: center; margin-top: 30px;">
-      <a href="index.html" class="btn btn-outline-dark">
+      <a href="index.html" class="btn btn-outline-dark" data-i18n="backHomeBtn">
         <i class="fa-solid fa-arrow-left"></i> Back to Home
       </a>
     </div>
@@ -223,21 +233,21 @@
     <div class="footer-container">
       <div class="footer-col">
         <h4>Sri Srinivasa Foods</h4>
-        <p>Gangapura Village, Chamarahalli Post, Kolar Taluk & District, Karnataka-563101.</p>
+        <p data-i18n="footerDesc">Gangapura Village, Chamarahalli Post, Kolar Taluk & District, Karnataka-563101.</p>
       </div>
       <div class="footer-col">
-        <h4>Quick Navigation</h4>
+        <h4 data-i18n="footerNavTitle">Quick Navigation</h4>
         <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us / Chef</a></li>
-          <li><a href="pickles.html">Pickles</a></li>
-          <li><a href="chillie-powder.html">Masala Powders</a></li>
-          <li><a href="other-foods.html">Other Foods</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="index.html" data-i18n="navHome">Home</a></li>
+          <li><a href="about.html" data-i18n="navAbout">About Us / Chef</a></li>
+          <li><a href="pickles.html" data-i18n="navPickles">Pickles</a></li>
+          <li><a href="chillie-powder.html" data-i18n="navMasala">Masala Powders</a></li>
+          <li><a href="other-foods.html" data-i18n="navOther">Other Foods</a></li>
+          <li><a href="contact.html" data-i18n="navContact">Contact Us</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Direct Calls</h4>
+        <h4 data-i18n="footerCallsTitle">Direct Calls</h4>
         <ul class="footer-contact-list">
           <li><strong>CALL G R SRINIVAS:</strong><br><a href="tel:+919972017010">+91 9972017010</a></li>
           <li><strong>CALL KARTHIK G S:</strong><br><a href="tel:+918197933637">+91 8197933637</a> (WhatsApp)</li>
@@ -245,7 +255,7 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Email & Address</h4>
+        <h4 data-i18n="footerEmailTitle">Email & Address</h4>
         <ul class="footer-contact-list">
           <li><strong>EMAIL KARTHIK:</strong><br><a href="mailto:karthikiyergs@gmail.com">karthikiyergs@gmail.com</a></li>
           <li><strong>EMAIL MANIKANTA:</strong><br><a href="mailto:manikantaiyer53@gmail.com">manikantaiyer53@gmail.com</a></li>
