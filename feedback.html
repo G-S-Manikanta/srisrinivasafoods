@@ -58,7 +58,7 @@
       <nav>
         <ul class="nav-menu" id="navMenu">
           <li><a href="index.html" class="nav-link" data-i18n="navHome">Home</a></li>
-          <li><a href="about.html" class="nav-link" data-i18n="navAbout">About Us / Chef</a></li>
+          <li><a href="about.html" class="nav-link" data-i18n="navAbout">About</a></li>
           <li><a href="pickles.html" class="nav-link" data-i18n="navPickles">Pickles</a></li>
           <li><a href="happalasandige.html" class="nav-link" data-i18n="navHappala">Happala / Sandige</a></li>
           <li><a href="chillie-powder.html" class="nav-link" data-i18n="navMasala">Masala Powders</a></li>
@@ -129,31 +129,147 @@
         </div>
       </div>
 
-      <!-- Right Box: Embedded Feedback Form -->
-      <div class="form-section-card" style="margin-top: 0;">
-        <h3 style="margin-bottom: 12px; color: var(--primary);" data-en="Submit Feedback Online" data-kn="ಆನ್‌ಲೈನ್ ಪ್ರತಿಕ್ರಿಯೆ ಸಲ್ಲಿಸಿ">Submit Feedback Online</h3>
-        <p style="font-size: 0.92rem; color: var(--text-muted); margin-bottom: 16px;" data-en="Please fill out the Google Form below:" data-kn="ದಯವಿಟ್ಟು ಕೆಳಗಿನ ಗೂಗಲ್ ಫಾರ್ಮ್ ಭರ್ತಿ ಮಾಡಿ:">
-          Please fill out the Google Form below:
-        </p>
-        <div class="form-iframe-container" style="min-height: 650px;">
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSefMzP3ZZ7F4mejpyzr_SbhvPMW8485qu43hGn3aRt2aYmDTQ/viewform?embedded=true" title="Customer Feedback Form" loading="lazy">Loading Google Form…</iframe>
+      <!-- Right Box: Designed Google Form with Web3Forms -->
+      <div class="form-section-card" style="margin-top: 0; padding: 0; background: transparent; border: none; box-shadow: none;">
+        <div class="gf-form-card">
+          <div class="gf-form-header">
+            <div class="gf-form-brand">
+              <i class="fa-solid fa-comment-dots"></i> Sri Srinivasa Foods • ಶ್ರೀ ಶ್ರೀನಿವಾಸ ಫುಡ್ಸ್
+            </div>
+            <h2 class="gf-form-title">Feedback & Reviews / ಗ್ರಾಹಕರ ಪ್ರತಿಕ್ರಿಯೆ</h2>
+            <p class="gf-form-desc">We value your opinion and suggestions to help Chef Srinivas deliver the best South Indian traditional taste.</p>
+            <div class="gf-required-notice">* Indicates required question / ಕಡ್ಡಾಯ ಕ್ಷೇತ್ರ</div>
+          </div>
+
+          <form action="https://api.web3forms.com/submit" method="POST" class="gf-form-body">
+            <input type="hidden" name="access_key" value="1e39391c-e480-4176-8931-613de96f3d66">
+            <input type="hidden" name="subject" value="New Customer Feedback - Sri Srinivasa Foods">
+            <input type="hidden" name="from_name" value="Sri Srinivasa Foods Feedback Portal">
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+            <!-- Question 1: Name -->
+            <div class="gf-question-box">
+              <label class="gf-label" for="fb_name">
+                Your Name / ಹೆಸರು <span class="req-star">*</span>
+              </label>
+              <input type="text" id="fb_name" name="Customer Name (ಹೆಸರು)" class="gf-input" placeholder="Your answer / ನಿಮ್ಮ ಹೆಸರು" required>
+            </div>
+
+            <!-- Question 2: Phone (Compulsory) & Email (Optional) -->
+            <div class="gf-question-box">
+              <label class="gf-label" for="fb_phone">
+                Phone Number / ದೂರವಾಣಿ ಸಂಖ್ಯೆ <span class="req-star">*</span>
+              </label>
+              <input type="tel" id="fb_phone" name="Phone Number (ದೂರವಾಣಿ ಸಂಖ್ಯೆ)" class="gf-input" placeholder="Enter your 10-digit mobile number" required>
+            </div>
+
+            <div class="gf-question-box">
+              <label class="gf-label" for="fb_email">
+                Email Address / ಇಮೇಲ್ ವಿಳಾಸ <span class="opt-label">(Optional / ಐಚ್ಛಿಕ)</span>
+              </label>
+              <input type="email" id="fb_email" name="Email Address (ಇಮೇಲ್)" class="gf-input" placeholder="e.g. yourname@example.com (Optional)">
+            </div>
+
+            <!-- Question 3: Products Tasted -->
+            <div class="gf-question-box">
+              <label class="gf-label">
+                Products Tasted / ಸವಿದ ಉತ್ಪನ್ನಗಳು
+              </label>
+              <div class="gf-option-grid">
+                <label class="gf-option-item">
+                  <input type="checkbox" name="Products Tasted" value="Pickles (ಉಪ್ಪಿನಕಾಯಿ)">
+                  <span>Pickles (ಉಪ್ಪಿನಕಾಯಿ)</span>
+                </label>
+                <label class="gf-option-item">
+                  <input type="checkbox" name="Products Tasted" value="Happala & Sandige (ಹಪ್ಪಳ/ಸಂಡಿಗೆ)">
+                  <span>Happala & Sandige (ಹಪ್ಪಳ/ಸಂಡಿಗೆ)</span>
+                </label>
+                <label class="gf-option-item">
+                  <input type="checkbox" name="Products Tasted" value="Masala Powders (ಮಸಾಲೆ ಪುಡಿಗಳು)">
+                  <span>Masala Powders (ಮಸಾಲೆ ಪುಡಿ)</span>
+                </label>
+                <label class="gf-option-item">
+                  <input type="checkbox" name="Products Tasted" value="Tokku, Gojju & Kodubale Snacks (ತೊಕ್ಕು/ಗೊಜ್ಜು/ಕೊಡುಬಳೆ)">
+                  <span>Tokku, Gojju & Kodubale (ತೊಕ್ಕು/ಗೊಜ್ಜು/ಕೊಡುಬಳೆ)</span>
+                </label>
+                <label class="gf-option-item">
+                  <input type="checkbox" name="Products Tasted" value="Daily Tiffin & Lunch Delivery (ದೈನಂದಿನ ತಿಂಡಿ & ಊಟ)">
+                  <span>Daily Tiffin & Lunch (ದೈನಂದಿನ ತಿಂಡಿ & ಊಟ)</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Question 4: Rating -->
+            <div class="gf-question-box">
+              <label class="gf-label">
+                Overall Taste & Quality Rating / ಗುಣಮಟ್ಟ <span class="req-star">*</span>
+              </label>
+              <div class="gf-option-grid">
+                <label class="gf-option-item">
+                  <input type="radio" name="Rating" value="5 Stars - Outstanding / ಅತ್ಯುತ್ತಮ" required>
+                  <span>⭐⭐⭐⭐⭐ Outstanding / ಅತ್ಯುತ್ತಮ</span>
+                </label>
+                <label class="gf-option-item">
+                  <input type="radio" name="Rating" value="4 Stars - Very Good / ತುಂಬಾ ಒಳ್ಳೆಯದು">
+                  <span>⭐⭐⭐⭐ Very Good / ತುಂಬಾ ಒಳ್ಳೆಯದು</span>
+                </label>
+                <label class="gf-option-item">
+                  <input type="radio" name="Rating" value="3 Stars - Good / ಒಳ್ಳೆಯದು">
+                  <span>⭐⭐⭐ Good / ಒಳ್ಳೆಯದು</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Question 5: Comments / Feedback -->
+            <div class="gf-question-box">
+              <label class="gf-label" for="fb_comments">
+                Detailed Feedback & Comments / ಅನಿಸಿಕೆಗಳು <span class="req-star">*</span>
+              </label>
+              <textarea id="fb_comments" name="Feedback Comments" class="gf-textarea" placeholder="Share your experience, flavor feedback, or suggestions..." required></textarea>
+            </div>
+
+            <!-- Status message area -->
+            <div class="gf-status-msg"></div>
+
+            <!-- Submit Buttons -->
+            <div class="gf-submit-wrap">
+              <button type="submit" class="gf-submit-btn">
+                <i class="fa-solid fa-paper-plane"></i> Submit Feedback / ಸಲ್ಲಿಸಿ
+              </button>
+              <button type="reset" class="gf-reset-btn">
+                <i class="fa-solid fa-rotate-left"></i> Clear form / ಅಳಿಸಿ
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
 
-    <!-- Location Map -->
+    <!-- Location Maps / Addresses -->
     <div style="margin-top: 50px;">
       <div class="section-header">
-        <span class="section-tag" data-en="Location" data-kn="ಸ್ಥಳ">Location</span>
-        <h2 class="section-title" data-en="Find Us in Gangapura, Kolar" data-kn="ಕೋಲಾರದ ಗಂಗಾಪುರದಲ್ಲಿ ನಮ್ಮ ತಾಣ">Find Us in Gangapura, Kolar</h2>
+        <span class="section-tag" data-en="Locations" data-kn="ನಮ್ಮ ಸ್ಥಳಗಳು">Locations</span>
+        <h2 class="section-title" data-en="Visit or Reach Us" data-kn="ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ">Visit or Reach Us</h2>
       </div>
-      <div class="map-card">
-        <iframe 
-          src="https://maps.google.com/maps?q=Gangapura,+Karnataka+563101&t=&z=15&ie=UTF8&iwloc=&output=embed" 
-          title="Sri Srinivasa Foods Location Map"
-          allowfullscreen="" 
-          loading="lazy">
-        </iframe>
+      <div class="locations-two-grid">
+        <div class="location-detail-card">
+          <div class="location-tag-pill loc-tag-blr"><i class="fa-solid fa-utensils"></i> Bengaluru Delivery Kitchen</div>
+          <h3>Bengaluru Tiffin & Lunch Hub</h3>
+          <p class="loc-address-text"><i class="fa-solid fa-location-dot"></i> 401, Siri Crystal Apartment, Uttarahalli Main Road, Bengaluru, Karnataka - 560061.</p>
+          <div class="loc-action-row">
+            <a href="tel:+918197933637" class="btn btn-outline-dark btn-sm"><i class="fa-solid fa-phone"></i> Call 8197933637</a>
+            <a href="https://wa.me/918197933637?text=Hi%20Sri%20Srinivasa%20Foods,%20I%20want%20to%20order%20daily%20tiffin/lunch%20in%20Bengaluru" target="_blank" rel="noopener" class="btn btn-success btn-sm"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+          </div>
+        </div>
+        <div class="location-detail-card">
+          <div class="location-tag-pill loc-tag-klr"><i class="fa-solid fa-mortar-pestle"></i> Heritage Production Unit</div>
+          <h3>Gangapura Heritage Kitchen</h3>
+          <p class="loc-address-text"><i class="fa-solid fa-location-dot"></i> Gangapura Village, Chamarahalli Post, Kolar Taluk & District, Karnataka - 563101.</p>
+          <div class="loc-action-row">
+            <a href="tel:+919972017010" class="btn btn-outline-dark btn-sm"><i class="fa-solid fa-phone"></i> Call 9972017010</a>
+            <a href="https://wa.me/919880170209?text=Hi%20Sri%20Srinivasa%20Foods,%20I%20have%20an%20enquiry%20regarding%20traditional%20foods" target="_blank" rel="noopener" class="btn btn-success btn-sm"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -170,12 +286,13 @@
       <div class="footer-col">
         <h4>Sri Srinivasa Foods</h4>
         <p data-i18n="footerDesc">Gangapura Village, Chamarahalli Post, Kolar Taluk & District, Karnataka-563101.</p>
+        <p style="margin-top: 10px; font-size: 0.85rem; color: rgba(255,255,255,0.8);"><strong>Bengaluru Tiffin & Lunch Hub:</strong><br>401, Siri Crystal Apartment, Uttarahalli Main Road, Bengaluru - 560061.</p>
       </div>
       <div class="footer-col">
         <h4 data-i18n="footerNavTitle">Quick Navigation</h4>
         <ul class="footer-links">
           <li><a href="index.html" data-i18n="navHome">Home</a></li>
-          <li><a href="about.html" data-i18n="navAbout">About Us / Chef</a></li>
+          <li><a href="about.html" data-i18n="navAbout">About</a></li>
           <li><a href="pickles.html" data-i18n="navPickles">Pickles</a></li>
           <li><a href="happalasandige.html" data-i18n="navHappala">Happala / Sandige</a></li>
           <li><a href="chillie-powder.html" data-i18n="navMasala">Masala Powders</a></li>
@@ -195,7 +312,8 @@
         <ul class="footer-contact-list">
           <li><strong>EMAIL KARTHIK:</strong><br><a href="mailto:karthikiyergs@gmail.com">karthikiyergs@gmail.com</a></li>
           <li><strong>EMAIL MANIKANTA:</strong><br><a href="mailto:manikantaiyer53@gmail.com">manikantaiyer53@gmail.com</a></li>
-          <li style="margin-top: 8px;">ADDRESS: GANGAPURA VILLAGE, CHAMARAHALLI POST, KOLAR, KARNATAKA-563101.</li>
+          <li style="margin-top: 8px;"><strong>KOLAR:</strong> Gangapura Village, Chamarahalli Post, Kolar - 563101.</li>
+          <li style="margin-top: 4px;"><strong>BENGALURU:</strong> 401, Siri Crystal Apt, Uttarahalli Main Rd, Bengaluru - 560061.</li>
         </ul>
       </div>
     </div>

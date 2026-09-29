@@ -58,7 +58,7 @@
       <nav>
         <ul class="nav-menu" id="navMenu">
           <li><a href="index.html" class="nav-link" data-i18n="navHome">Home</a></li>
-          <li><a href="about.html" class="nav-link" data-i18n="navAbout">About Us / Chef</a></li>
+          <li><a href="about.html" class="nav-link" data-i18n="navAbout">About</a></li>
           <li><a href="pickles.html" class="nav-link" data-i18n="navPickles">Pickles</a></li>
           <li><a href="happalasandige.html" class="nav-link" data-i18n="navHappala">Happala / Sandige</a></li>
           <li><a href="chillie-powder.html" class="nav-link active" data-i18n="navMasala">Masala Powders</a></li>
@@ -259,16 +259,141 @@
       </div>
     </div>
 
-    <!-- Quick Inquiry / Order Section -->
+    <!-- Designed Google Form with Web3Forms -->
     <section class="form-section-card" style="margin-top: 50px;">
-      <div class="section-header" style="margin-bottom: 20px;">
-        <span class="section-tag" data-en="Order Masala Powders" data-kn="ಮಸಾಲೆ ಪುಡಿಗಳ ಆರ್ಡರ್">Order Masala Powders</span>
-        <h2 class="section-title" data-en="Submit Requirement For Spice Powders" data-kn="ಮಸಾಲೆ ಪುಡಿಗಳ ಬೇಡಿಕೆಯನ್ನು ಸಲ್ಲಿಸಿ">Submit Requirement For Spice Powders</h2>
-        <p class="section-subtitle" data-en="Specify your requirement and desired quantities in the form below." data-kn="ನಿಮಗೆ ಅಗತ್ಯವಿರುವ ಪುಡಿಗಳನ್ನು ಕೆಳಗಿನ ಫಾರ್ಮ್‌ನಲ್ಲಿ ಭರ್ತಿ ಮಾಡಿ.">Specify your requirement and desired quantities in the form below.</p>
-      </div>
+      <div class="gf-form-card">
+        <div class="gf-form-header">
+          <div class="gf-form-brand">
+            <i class="fa-solid fa-mortar-pestle"></i> Sri Srinivasa Foods • ಶ್ರೀ ಶ್ರೀನಿವಾಸ ಫುಡ್ಸ್
+          </div>
+          <h2 class="gf-form-title">Masala & Chutney Powders Order / ಮಸಾಲೆ ಪುಡಿಗಳ ಆರ್ಡರ್</h2>
+          <p class="gf-form-desc">Freshly roasted, traditionally stone-ground masala and chutney powders made to order without preservatives. Please select your items below.</p>
+          <div class="gf-required-notice">* Indicates required question / ಕಡ್ಡಾಯ ಕ್ಷೇತ್ರ</div>
+        </div>
 
-      <div class="form-iframe-container">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSefMzP3ZZ7F4mejpyzr_SbhvPMW8485qu43hGn3aRt2aYmDTQ/viewform?embedded=true" title="Masala Powder Requirement Form" loading="lazy">Loading Google Form…</iframe>
+        <form action="https://api.web3forms.com/submit" method="POST" class="gf-form-body">
+          <!-- Web3Forms Config -->
+          <input type="hidden" name="access_key" value="1e39391c-e480-4176-8931-613de96f3d66">
+          <input type="hidden" name="subject" value="New Masala Powders Order - Sri Srinivasa Foods">
+          <input type="hidden" name="from_name" value="Sri Srinivasa Foods Portal">
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+          <!-- Question 1: Full Name -->
+          <div class="gf-question-box">
+            <label class="gf-label" for="masala_name">
+              Full Name / ಪೂರ್ಣ ಹೆಸರು <span class="req-star">*</span>
+            </label>
+            <input type="text" id="masala_name" name="Full Name (ಹೆಸರು)" class="gf-input" placeholder="Your answer / ನಿಮ್ಮ ಹೆಸರು" required>
+          </div>
+
+          <!-- Question 2: Phone Number -->
+          <div class="gf-question-box">
+            <label class="gf-label" for="masala_phone">
+              Phone Number / ದೂರವಾಣಿ ಸಂಖ್ಯೆ <span class="req-star">*</span>
+            </label>
+            <input type="tel" id="masala_phone" name="Phone Number (ಫೋನ್)" class="gf-input" placeholder="10-digit mobile number" required>
+          </div>
+
+          <!-- Question 3: Email Address (Optional) -->
+          <div class="gf-question-box">
+            <label class="gf-label" for="masala_email">
+              Email Address / ಇಮೇಲ್ <span style="font-weight: 400; color: var(--text-muted); font-size: 0.85rem;">(Optional / ಐಚ್ಛಿಕ)</span>
+            </label>
+            <input type="email" id="masala_email" name="Email Address" class="gf-input" placeholder="example@email.com">
+          </div>
+
+          <!-- Question 4: Delivery Address -->
+          <div class="gf-question-box">
+            <label class="gf-label" for="masala_address">
+              Delivery Address / ವಿಳಾಸ <span class="req-star">*</span>
+            </label>
+            <span class="gf-sublabel">Include Door No, Street, City, and Pincode for courier</span>
+            <textarea id="masala_address" name="Delivery Address (ವಿಳಾಸ)" class="gf-textarea" placeholder="Your full address / ನಿಮ್ಮ ಪೂರ್ಣ ವಿಳಾಸ" required></textarea>
+          </div>
+
+          <!-- Question 5: Select Spice & Chutney Powders -->
+          <div class="gf-question-box">
+            <label class="gf-label">
+              Select Spice & Chutney Powders / ಮಸಾಲೆ ಹಾಗೂ ಚಟ್ನಿ ಪುಡಿಗಳು <span class="req-star">*</span>
+            </label>
+            <span class="gf-sublabel">Select all items required:</span>
+            <div class="gf-option-grid">
+              <label class="gf-option-item">
+                <input type="checkbox" name="Spice Powders" value="Sambhar Powder (ಸಾಂಬಾರ್ ಪುಡಿ) - ₹800/kg">
+                <span>Sambhar Powder (ಸಾಂಬಾರ್ ಪುಡಿ) - ₹800/kg</span>
+              </label>
+              <label class="gf-option-item">
+                <input type="checkbox" name="Spice Powders" value="Rasam Powder (ರಸಂ ಪುಡಿ) - ₹800/kg">
+                <span>Rasam Powder (ರಸಂ ಪುಡಿ) - ₹800/kg</span>
+              </label>
+              <label class="gf-option-item">
+                <input type="checkbox" name="Spice Powders" value="Bisi Bele Bath Powder (ಬಿಸಿ ಬೇಳೆ ಬಾತ್) - ₹700/kg">
+                <span>Bisi Bele Bath (ಬಿಸಿ ಬೇಳೆ ಬಾತ್) - ₹700/kg</span>
+              </label>
+              <label class="gf-option-item">
+                <input type="checkbox" name="Spice Powders" value="Vangi Bath Powder (ವಾಂಗಿ ಬಾತ್ ಪುಡಿ) - ₹700/kg">
+                <span>Vangi Bath (ವಾಂಗಿ ಬಾತ್) - ₹700/kg</span>
+              </label>
+              <label class="gf-option-item">
+                <input type="checkbox" name="Spice Powders" value="Puliyogare Powder (ಪುಳಿಯೋಗರೆ ಪುಡಿ) - ₹600/kg">
+                <span>Puliyogare Powder (ಪುಳಿಯೋಗರೆ) - ₹600/kg</span>
+              </label>
+              <label class="gf-option-item">
+                <input type="checkbox" name="Spice Powders" value="Chutney Powder (ಚಟ್ನಿ ಪುಡಿ) - ₹600/kg">
+                <span>Chutney Powder (ಚಟ್ನಿ ಪುಡಿ) - ₹600/kg</span>
+              </label>
+              <label class="gf-option-item">
+                <input type="checkbox" name="Spice Powders" value="Jaggery Chutney Powder (ಬೆಲ್ಲದ ಚಟ್ನಿ ಪುಡಿ) - ₹600/kg">
+                <span>Jaggery Chutney (ಬೆಲ್ಲದ ಚಟ್ನಿ) - ₹600/kg</span>
+              </label>
+              <label class="gf-option-item">
+                <input type="checkbox" name="Spice Powders" value="Curry Leaves Chutney Powder (ಕರಿಬೇವು ಚಟ್ನಿ) - ₹650/kg">
+                <span>Curry Leaves Chutney (ಕರಿಬೇವು) - ₹650/kg</span>
+              </label>
+              <label class="gf-option-item">
+                <input type="checkbox" name="Spice Powders" value="Groundnut Chutney Powder (ಶೇಂಗಾ ಚಟ್ನಿ ಪುಡಿ) - ₹650/kg">
+                <span>Groundnut Chutney (ಶೇಂಗಾ ಚಟ್ನಿ) - ₹650/kg</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Question 6: Quantity Required -->
+          <div class="gf-question-box">
+            <label class="gf-label" for="masala_qty">
+              Number of Kilograms / Grams Required <span class="req-star">*</span>
+            </label>
+            <input type="text" id="masala_qty" name="Quantity Required (ಪ್ರಮಾಣ)" class="gf-input" placeholder="e.g. 500g Sambhar, 500g Rasam, 1kg Chutney Powder" required>
+          </div>
+
+          <!-- Question 7: Delivery Date -->
+          <div class="gf-question-box">
+            <label class="gf-label" for="masala_date">
+              Date of Receiving the Order / ದಿನಾಂಕ
+            </label>
+            <input type="date" id="masala_date" name="Preferred Date (ದಿನಾಂಕ)" class="gf-input">
+          </div>
+
+          <!-- Question 8: Comments -->
+          <div class="gf-question-box">
+            <label class="gf-label" for="masala_comments">
+              Any Other Things to Mention / ಇತರ ವಿವರಗಳು
+            </label>
+            <textarea id="masala_comments" name="Special Instructions" class="gf-textarea" placeholder="Custom roasting, salt preferences, or any specific requests..."></textarea>
+          </div>
+
+          <!-- Status message area -->
+          <div class="gf-status-msg"></div>
+
+          <!-- Submit Buttons -->
+          <div class="gf-submit-wrap">
+            <button type="submit" class="gf-submit-btn">
+              <i class="fa-solid fa-paper-plane"></i> Submit Order / ಆರ್ಡರ್ ಸಲ್ಲಿಸಿ
+            </button>
+            <button type="reset" class="gf-reset-btn">
+              <i class="fa-solid fa-rotate-left"></i> Clear form / ಫಾರ್ಮ್ ಅಳಿಸಿ
+            </button>
+          </div>
+        </form>
       </div>
     </section>
 
@@ -290,7 +415,7 @@
         <h4 data-i18n="footerNavTitle">Quick Navigation</h4>
         <ul class="footer-links">
           <li><a href="index.html" data-i18n="navHome">Home</a></li>
-          <li><a href="about.html" data-i18n="navAbout">About Us / Chef</a></li>
+          <li><a href="about.html" data-i18n="navAbout">About</a></li>
           <li><a href="pickles.html" data-i18n="navPickles">Pickles</a></li>
           <li><a href="happalasandige.html" data-i18n="navHappala">Happala / Sandige</a></li>
           <li><a href="chillie-powder.html" data-i18n="navMasala">Masala Powders</a></li>
@@ -307,11 +432,17 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Email & Address</h4>
+        <h4 data-i18n="footerEmailTitle">Our Locations & Email</h4>
         <ul class="footer-contact-list">
-          <li><strong>EMAIL KARTHIK:</strong><br><a href="mailto:karthikiyergs@gmail.com">karthikiyergs@gmail.com</a></li>
-          <li><strong>EMAIL MANIKANTA:</strong><br><a href="mailto:manikantaiyer53@gmail.com">manikantaiyer53@gmail.com</a></li>
-          <li style="margin-top: 8px;">ADDRESS: GANGAPURA VILLAGE, CHAMARAHALLI POST, KOLAR, KARNATAKA-563101.</li>
+          <li><strong>EMAIL:</strong><br><a href="mailto:karthikiyergs@gmail.com">karthikiyergs@gmail.com</a><br><a href="mailto:manikantaiyer53@gmail.com">manikantaiyer53@gmail.com</a></li>
+          <li style="margin-top: 8px;">
+            <strong>BENGALURU TIFFIN & LUNCH:</strong><br>
+            401, Siri Crystal Apartment, Uttarahalli Main Road, Bengaluru - 560061.
+          </li>
+          <li style="margin-top: 8px;">
+            <strong>KOLAR PRODUCTION UNIT:</strong><br>
+            Gangapura Village, Chamarahalli Post, Kolar Taluk & District - 563101.
+          </li>
         </ul>
       </div>
     </div>

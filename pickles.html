@@ -58,7 +58,7 @@
       <nav>
         <ul class="nav-menu" id="navMenu">
           <li><a href="index.html" class="nav-link" data-i18n="navHome">Home</a></li>
-          <li><a href="about.html" class="nav-link" data-i18n="navAbout">About Us / Chef</a></li>
+          <li><a href="about.html" class="nav-link" data-i18n="navAbout">About</a></li>
           <li><a href="pickles.html" class="nav-link active" data-i18n="navPickles">Pickles</a></li>
           <li><a href="happalasandige.html" class="nav-link" data-i18n="navHappala">Happala / Sandige</a></li>
           <li><a href="chillie-powder.html" class="nav-link" data-i18n="navMasala">Masala Powders</a></li>
@@ -208,16 +208,142 @@
       </div>
     </div>
 
-    <!-- Embedded Pickle Google Form -->
+    <!-- Designed Google Form with Web3Forms -->
     <section id="pickle-form" class="form-section-card" style="margin-top: 50px;">
-      <div class="section-header" style="margin-bottom: 20px;">
-        <span class="section-tag" data-en="Order Form" data-kn="ಆರ್ಡರ್ ಫಾರ್ಮ್">Order Form</span>
-        <h2 class="section-title" data-en="Submit Pickle Requirement" data-kn="ಉಪ್ಪಿನಕಾಯಿ ಬೇಡಿಕೆಯನ್ನು ಸಲ್ಲಿಸಿ">Submit Pickle Requirement</h2>
-        <p class="section-subtitle" data-en="Fill in the Google Form below to place your pickle order directly." data-kn="ನೇರವಾಗಿ ಉಪ್ಪಿನಕಾಯಿ ಆರ್ಡರ್ ಮಾಡಲು ಕೆಳಗಿನ ಗೂಗಲ್ ಫಾರ್ಮ್ ಭರ್ತಿ ಮಾಡಿ.">Fill in the Google Form below to place your pickle order directly.</p>
-      </div>
+      <div class="gf-form-card">
+        <div class="gf-form-header">
+          <div class="gf-form-brand">
+            <i class="fa-solid fa-jar"></i> Sri Srinivasa Foods • ಶ್ರೀ ಶ್ರೀನಿವಾಸ ಫುಡ್ಸ್
+          </div>
+          <h2 class="gf-form-title">Pickle Order Form / ಉಪ್ಪಿನಕಾಯಿ ಆರ್ಡರ್</h2>
+          <p class="gf-form-desc">Authentic homemade traditional pickles prepared by Chef Srinivas G R. Please fill in your delivery details and requirements below.</p>
+          <div class="gf-required-notice">* Indicates required question / ಕಡ್ಡಾಯ ಕ್ಷೇತ್ರ</div>
+        </div>
 
-      <div class="form-iframe-container">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfUGhX7U0FCNlen4o87qn0iGZhvyr-rPb-TMg9YM86MnUKlVA/viewform?embedded=true" title="Pickle Order Google Form" loading="lazy">Loading Google Form…</iframe>
+        <form action="https://api.web3forms.com/submit" method="POST" class="gf-form-body">
+          <!-- Web3Forms Config -->
+          <input type="hidden" name="access_key" value="1e39391c-e480-4176-8931-613de96f3d66">
+          <input type="hidden" name="subject" value="New Pickle Order - Sri Srinivasa Foods">
+          <input type="hidden" name="from_name" value="Sri Srinivasa Foods Portal">
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+          <!-- Question 1: Full Name -->
+          <div class="gf-question-box">
+            <label class="gf-label" for="pickle_name">
+              Full Name / ಪೂರ್ಣ ಹೆಸರು <span class="req-star">*</span>
+            </label>
+            <input type="text" id="pickle_name" name="Full Name (ಹೆಸರು)" class="gf-input" placeholder="Your answer / ನಿಮ್ಮ ಹೆಸರು" required>
+          </div>
+
+          <!-- Question 2: Phone Number -->
+          <div class="gf-question-box">
+            <label class="gf-label" for="pickle_phone">
+              Phone Number / ದೂರವಾಣಿ ಸಂಖ್ಯೆ <span class="req-star">*</span>
+            </label>
+            <input type="tel" id="pickle_phone" name="Phone Number (ಫೋನ್)" class="gf-input" placeholder="10-digit mobile number" required>
+          </div>
+
+          <!-- Question 3: Delivery Address -->
+          <div class="gf-question-box">
+            <label class="gf-label" for="pickle_address">
+              Delivery Address / ವಿಳಾಸ <span class="req-star">*</span>
+            </label>
+            <span class="gf-sublabel">Include Door No, Street, City, and Pincode for courier</span>
+            <textarea id="pickle_address" name="Delivery Address (ವಿಳಾಸ)" class="gf-textarea" placeholder="Your full address / ನಿಮ್ಮ ಪೂರ್ಣ ವಿಳಾಸ" required></textarea>
+          </div>
+
+          <!-- Question 4: Type of Pickle -->
+          <div class="gf-question-box">
+            <label class="gf-label">
+              Type of Pickle / ಉಪ್ಪಿನಕಾಯಿಯ ವಿಧ <span class="req-star">*</span>
+            </label>
+            <span class="gf-sublabel">Select one or more items:</span>
+            <div class="gf-option-grid">
+              <label class="gf-option-item">
+                <input type="checkbox" name="Pickle Items" value="Makali Beru Pickle (ಮಾಕಳಿ ಬೇರು) - ₹600/kg">
+                <span>Makali Beru (ಮಾಕಳಿ ಬೇರು) - ₹600/kg</span>
+              </label>
+              <label class="gf-option-item">
+                <input type="checkbox" name="Pickle Items" value="Mango Pickle (ಮಾವಿನಕಾಯಿ) - ₹250/kg">
+                <span>Mango Pickle (ಮಾವಿನಕಾಯಿ) - ₹250/kg</span>
+              </label>
+              <label class="gf-option-item">
+                <input type="checkbox" name="Pickle Items" value="Lemon Pickle (ನಿಂಬೆಕಾಯಿ) - ₹250/kg">
+                <span>Lemon Pickle (ನಿಂಬೆಕಾಯಿ) - ₹250/kg</span>
+              </label>
+              <label class="gf-option-item">
+                <input type="checkbox" name="Pickle Items" value="Mango Ginger Pickle (ಮಾವಿನ ಶುಂಠಿ) - ₹500/kg">
+                <span>Mango Ginger (ಮಾವಿನ ಶುಂಠಿ) - ₹500/kg</span>
+              </label>
+              <label class="gf-option-item">
+                <input type="checkbox" name="Pickle Items" value="Avakai Pickle (ಆವಕಾಯಿ) - ₹400/kg">
+                <span>Avakai Pickle (ಆವಕಾಯಿ) - ₹400/kg</span>
+              </label>
+              <label class="gf-option-item">
+                <input type="checkbox" name="Pickle Items" value="Nelli Kayi Pickle (ನೆಲ್ಲಿಕಾಯಿ) - ₹250/kg">
+                <span>Nelli Kayi / Amla (ನೆಲ್ಲಿಕಾಯಿ) - ₹250/kg</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Question 5: Quantity Required -->
+          <div class="gf-question-box">
+            <label class="gf-label">
+              Number of KGs Required / ತೂಕ (ಪ್ರಮಾಣ) <span class="req-star">*</span>
+            </label>
+            <div class="gf-option-grid">
+              <label class="gf-option-item">
+                <input type="radio" name="Quantity (ತೂಕ)" value="1 kg" required>
+                <span>1 kg</span>
+              </label>
+              <label class="gf-option-item">
+                <input type="radio" name="Quantity (ತೂಕ)" value="2 kg">
+                <span>2 kg</span>
+              </label>
+              <label class="gf-option-item">
+                <input type="radio" name="Quantity (ತೂಕ)" value="3 kg">
+                <span>3 kg</span>
+              </label>
+              <label class="gf-option-item">
+                <input type="radio" name="Quantity (ತೂಕ)" value="4 kg">
+                <span>4 kg</span>
+              </label>
+              <label class="gf-option-item">
+                <input type="radio" name="Quantity (ತೂಕ)" value="5 kg+">
+                <span>5 kg or more</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Question 6: Delivery Date -->
+          <div class="gf-question-box">
+            <label class="gf-label" for="pickle_date">
+              Preferred Date for Receiving Order / ಪಡೆಯಲು ಇಚ್ಚಿಸುವ ದಿನಾಂಕ
+            </label>
+            <input type="date" id="pickle_date" name="Preferred Date (ದಿನಾಂಕ)" class="gf-input">
+          </div>
+
+          <!-- Question 7: Comments -->
+          <div class="gf-question-box">
+            <label class="gf-label" for="pickle_comments">
+              Any Other Notes / ವಿಶೇಷ ಸೂಚನೆಗಳು
+            </label>
+            <textarea id="pickle_comments" name="Special Instructions" class="gf-textarea" placeholder="Spice level preference, packaging requests, or additional notes..."></textarea>
+          </div>
+
+          <!-- Status message area -->
+          <div class="gf-status-msg"></div>
+
+          <!-- Submit Buttons -->
+          <div class="gf-submit-wrap">
+            <button type="submit" class="gf-submit-btn">
+              <i class="fa-solid fa-paper-plane"></i> Submit Order / ಆರ್ಡರ್ ಸಲ್ಲಿಸಿ
+            </button>
+            <button type="reset" class="gf-reset-btn">
+              <i class="fa-solid fa-rotate-left"></i> Clear form / ಫಾರ್ಮ್ ಅಳಿಸಿ
+            </button>
+          </div>
+        </form>
       </div>
     </section>
 
@@ -239,7 +365,7 @@
         <h4 data-i18n="footerNavTitle">Quick Navigation</h4>
         <ul class="footer-links">
           <li><a href="index.html" data-i18n="navHome">Home</a></li>
-          <li><a href="about.html" data-i18n="navAbout">About Us / Chef</a></li>
+          <li><a href="about.html" data-i18n="navAbout">About</a></li>
           <li><a href="happalasandige.html" data-i18n="navHappala">Happala / Sandige</a></li>
           <li><a href="chillie-powder.html" data-i18n="navMasala">Masala Powders</a></li>
           <li><a href="other-foods.html" data-i18n="navOther">Other Foods</a></li>
@@ -255,11 +381,17 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h4 data-i18n="footerEmailTitle">Email & Address</h4>
+        <h4 data-i18n="footerEmailTitle">Our Locations & Email</h4>
         <ul class="footer-contact-list">
-          <li><strong>EMAIL KARTHIK:</strong><br><a href="mailto:karthikiyergs@gmail.com">karthikiyergs@gmail.com</a></li>
-          <li><strong>EMAIL MANIKANTA:</strong><br><a href="mailto:manikantaiyer53@gmail.com">manikantaiyer53@gmail.com</a></li>
-          <li style="margin-top: 8px;">ADDRESS: GANGAPURA VILLAGE, CHAMARAHALLI POST, KOLAR, KARNATAKA-563101.</li>
+          <li><strong>EMAIL:</strong><br><a href="mailto:karthikiyergs@gmail.com">karthikiyergs@gmail.com</a><br><a href="mailto:manikantaiyer53@gmail.com">manikantaiyer53@gmail.com</a></li>
+          <li style="margin-top: 8px;">
+            <strong>BENGALURU TIFFIN & LUNCH:</strong><br>
+            401, Siri Crystal Apartment, Uttarahalli Main Road, Bengaluru - 560061.
+          </li>
+          <li style="margin-top: 8px;">
+            <strong>KOLAR PRODUCTION UNIT:</strong><br>
+            Gangapura Village, Chamarahalli Post, Kolar Taluk & District - 563101.
+          </li>
         </ul>
       </div>
     </div>

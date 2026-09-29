@@ -58,7 +58,7 @@
       <nav>
         <ul class="nav-menu" id="navMenu">
           <li><a href="index.html" class="nav-link" data-i18n="navHome">Home</a></li>
-          <li><a href="about.html" class="nav-link" data-i18n="navAbout">About Us / Chef</a></li>
+          <li><a href="about.html" class="nav-link" data-i18n="navAbout">About</a></li>
           <li><a href="pickles.html" class="nav-link" data-i18n="navPickles">Pickles</a></li>
           <li><a href="happalasandige.html" class="nav-link" data-i18n="navHappala">Happala / Sandige</a></li>
           <li><a href="chillie-powder.html" class="nav-link" data-i18n="navMasala">Masala Powders</a></li>
@@ -206,18 +206,152 @@
           <a href="order.html" class="btn btn-primary btn-sm" data-en="Order Now" data-kn="ಆರ್ಡರ್ ಮಾಡಿ"><i class="fa-solid fa-bag-shopping"></i> Order Now</a>
         </div>
       </div>
+
+      <!-- 7. Traditional Kodubale -->
+      <div class="product-item-card">
+        <div>
+          <div class="product-top">
+            <span class="product-num-badge">#7</span>
+            <span class="price-badge" style="margin:0;">₹ 350 / kg</span>
+          </div>
+          <h3 class="product-title">Traditional Crispy Kodubale</h3>
+          <div class="product-kannada kannada-text">ಸಾಂಪ್ರದಾಯಿಕ ಗರಿಗರಿ ಕೊಡುಬಳೆ</div>
+          <p class="product-desc" data-en="Handmade authentic crispy rings crafted from rice flour, fresh coconut, roasted gram, ajwain, cumin, and fiery red chillies. Perfect tea-time crunch!" data-kn="ಅಕ್ಕಿ ಹಿಟ್ಟು, ಹಸಿಕಾಯಿ ತುರಿ, ಹುರಿಗಡಲೆ ಮತ್ತು ಸುವಾಸನಾಯುಕ್ತ ಜೀರಿಗೆ-ಓಮ ಬೆರೆಸಿ ಕೈಯಿಂದ ಮಾಡಿದ ಸಾಂಪ್ರದಾಯಿಕ ಗರಿಗರಿ ಕೊಡುಬಳೆ.">Handmade authentic crispy rings crafted from rice flour, fresh coconut, roasted gram, ajwain, cumin, and fiery red chillies. Perfect tea-time crunch!</p>
+        </div>
+        <div class="product-footer">
+          <span class="product-price">₹ 350 / kg</span>
+          <a href="order.html" class="btn btn-primary btn-sm" data-en="Order Now" data-kn="ಆರ್ಡರ್ ಮಾಡಿ"><i class="fa-solid fa-bag-shopping"></i> Order Now</a>
+        </div>
+      </div>
     </div>
 
-    <!-- Embedded Inquiry Form -->
+    <!-- Designed Google Form with Web3Forms -->
     <section class="form-section-card" style="margin-top: 50px;">
-      <div class="section-header" style="margin-bottom: 20px;">
-        <span class="section-tag" data-en="Order Inquiry" data-kn="ಆರ್ಡರ್ ವಿಚಾರಣೆ">Order Inquiry</span>
-        <h2 class="section-title" data-en="Order Other Special Foods" data-kn="ಇತರ ಆಹಾರ ಉತ್ಪನ್ನಗಳನ್ನು ಆರ್ಡರ್ ಮಾಡಿ">Order Other Special Foods</h2>
-        <p class="section-subtitle" data-en="Submit your requirement using the Google Form below." data-kn="ನಿಮ್ಮ ಬೇಡಿಕೆಯನ್ನು ಕೆಳಗಿನ ಗೂಗಲ್ ಫಾರ್ಮ್‌ನಲ್ಲಿ ಭರ್ತಿ ಮಾಡಿ.">Submit your requirement using the Google Form below.</p>
-      </div>
+      <div class="gf-form-card">
+        <div class="gf-form-header">
+          <div class="gf-form-brand">
+            <i class="fa-solid fa-bowl-food"></i> Sri Srinivasa Foods • ಶ್ರೀ ಶ್ರೀನಿವಾಸ ಫುಡ್ಸ್
+          </div>
+          <h2 class="gf-form-title">Tokku, Gojju & Snacks Order / ತೊಕ್ಕು, ಗೊಜ್ಜು & ತಿಂಡಿ</h2>
+          <p class="gf-form-desc">Traditional Mango, Tomato, and Tamarind Tokku, Puliyogare Gojju, Crispy Kodubale, Uppu Menasinakayi, and Hurida Ragi Hittu. Please fill in your requirement below.</p>
+          <div class="gf-required-notice">* Indicates required question / ಕಡ್ಡಾಯ ಕ್ಷೇತ್ರ</div>
+        </div>
 
-      <div class="form-iframe-container">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSefMzP3ZZ7F4mejpyzr_SbhvPMW8485qu43hGn3aRt2aYmDTQ/viewform?embedded=true" title="Special Foods Enquiry Form" loading="lazy">Loading Google Form…</iframe>
+        <form action="https://api.web3forms.com/submit" method="POST" class="gf-form-body">
+          <!-- Web3Forms Config -->
+          <input type="hidden" name="access_key" value="1e39391c-e480-4176-8931-613de96f3d66">
+          <input type="hidden" name="subject" value="New Tokku, Gojju & Snacks Order - Sri Srinivasa Foods">
+          <input type="hidden" name="from_name" value="Sri Srinivasa Foods Portal">
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+          <!-- Question 1: Full Name -->
+          <div class="gf-question-box">
+            <label class="gf-label" for="other_name">
+              Full Name / ಪೂರ್ಣ ಹೆಸರು <span class="req-star">*</span>
+            </label>
+            <input type="text" id="other_name" name="Full Name (ಹೆಸರು)" class="gf-input" placeholder="Your answer / ನಿಮ್ಮ ಹೆಸರು" required>
+          </div>
+
+          <!-- Question 2: Phone Number (Compulsory) -->
+          <div class="gf-question-box">
+            <label class="gf-label" for="other_phone">
+              Phone Number / ದೂರವಾಣಿ ಸಂಖ್ಯೆ <span class="req-star">*</span>
+            </label>
+            <input type="tel" id="other_phone" name="Phone Number (ಫೋನ್)" class="gf-input" placeholder="10-digit mobile number" required>
+          </div>
+
+          <!-- Question: Email Address (Optional) -->
+          <div class="gf-question-box">
+            <label class="gf-label" for="other_email">
+              Email Address / ಇಮೇಲ್ <span class="opt-label">(Optional / ಐಚ್ಛಿಕ)</span>
+            </label>
+            <input type="email" id="other_email" name="Email Address (ಇಮೇಲ್)" class="gf-input" placeholder="e.g. yourname@example.com (Optional)">
+          </div>
+
+          <!-- Question 3: Delivery Address -->
+          <div class="gf-question-box">
+            <label class="gf-label" for="other_address">
+              Delivery Address / ವಿಳಾಸ <span class="req-star">*</span>
+            </label>
+            <span class="gf-sublabel">Include Door No, Street, City, and Pincode for courier</span>
+            <textarea id="other_address" name="Delivery Address (ವಿಳಾಸ)" class="gf-textarea" placeholder="Your full address / ನಿಮ್ಮ ಪೂರ್ಣ ವಿಳಾಸ" required></textarea>
+          </div>
+
+          <!-- Question 4: Products Required -->
+          <div class="gf-question-box">
+            <label class="gf-label">
+              Select Special Food Items / ಉತ್ಪನ್ನಗಳು <span class="req-star">*</span>
+            </label>
+            <span class="gf-sublabel">Select all that apply:</span>
+            <div class="gf-option-grid">
+              <label class="gf-option-item">
+                <input type="checkbox" name="Special Food Items" value="Traditional Kodubale (ಕೊಡುಬಳೆ) - ₹350/kg">
+                <span>Traditional Kodubale (ಕೊಡುಬಳೆ) - ₹350/kg</span>
+              </label>
+              <label class="gf-option-item">
+                <input type="checkbox" name="Special Food Items" value="Mango Tokku (ಮಾವಿನಕಾಯಿ ತೊಕ್ಕು) - ₹250/kg">
+                <span>Mango Tokku (ಮಾವಿನಕಾಯಿ ತೊಕ್ಕು) - ₹250/kg</span>
+              </label>
+              <label class="gf-option-item">
+                <input type="checkbox" name="Special Food Items" value="Tomato Tokku (ಟೊಮೆಟೊ ತೊಕ್ಕು) - ₹250/kg">
+                <span>Tomato Tokku (ಟೊಮೆಟೊ ತೊಕ್ಕು) - ₹250/kg</span>
+              </label>
+              <label class="gf-option-item">
+                <input type="checkbox" name="Special Food Items" value="Tamarind Tokku (ಹುಣಸೆಕಾಯಿ ತೊಕ್ಕು) - ₹250/kg">
+                <span>Tamarind Tokku (ಹುಣಸೆಕಾಯಿ ತೊಕ್ಕು) - ₹250/kg</span>
+              </label>
+              <label class="gf-option-item">
+                <input type="checkbox" name="Special Food Items" value="Puliyogare Gojju (ಪುಳಿಯೋಗರೆ ಗೊಜ್ಜು) - ₹700/kg">
+                <span>Puliyogare Gojju (ಪುಳಿಯೋಗರೆ ಗೊಜ್ಜು) - ₹700/kg</span>
+              </label>
+              <label class="gf-option-item">
+                <input type="checkbox" name="Special Food Items" value="Uppu Menasinakayi (ಉಪ್ಪು ಮೆಣಸಿನಕಾಯಿ) - ₹500/kg">
+                <span>Uppu Menasinakayi (ಉಪ್ಪು ಮೆಣಸಿನಕಾಯಿ) - ₹500/kg</span>
+              </label>
+              <label class="gf-option-item">
+                <input type="checkbox" name="Special Food Items" value="Hurida Ragi Hittu (ಹುರಿದ ರಾಗಿ ಹಿಟ್ಟು) - ₹200/kg">
+                <span>Hurida Ragi Hittu (ಹುರಿದ ರಾಗಿ ಹಿಟ್ಟು) - ₹200/kg</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Question 5: Quantity Required -->
+          <div class="gf-question-box">
+            <label class="gf-label" for="other_qty">
+              Quantity / Required Amount <span class="req-star">*</span>
+            </label>
+            <input type="text" id="other_qty" name="Quantity Required (ಪ್ರಮಾಣ)" class="gf-input" placeholder="e.g. 1kg Kodubale, 500g Puliyogare Gojju" required>
+          </div>
+
+          <!-- Question 6: Delivery Date -->
+          <div class="gf-question-box">
+            <label class="gf-label" for="other_date">
+              Preferred Date for Receiving Order / ದಿನಾಂಕ
+            </label>
+            <input type="date" id="other_date" name="Preferred Date (ದಿನಾಂಕ)" class="gf-input">
+          </div>
+
+          <!-- Question 7: Comments -->
+          <div class="gf-question-box">
+            <label class="gf-label" for="other_comments">
+              Any Other Notes / ಇತರ ವಿವರಗಳು
+            </label>
+            <textarea id="other_comments" name="Special Instructions" class="gf-textarea" placeholder="Special requirements or custom requests..."></textarea>
+          </div>
+
+          <!-- Status message area -->
+          <div class="gf-status-msg"></div>
+
+          <!-- Submit Buttons -->
+          <div class="gf-submit-wrap">
+            <button type="submit" class="gf-submit-btn">
+              <i class="fa-solid fa-paper-plane"></i> Submit Order / ಆರ್ಡರ್ ಸಲ್ಲಿಸಿ
+            </button>
+            <button type="reset" class="gf-reset-btn">
+              <i class="fa-solid fa-rotate-left"></i> Clear form / ಫಾರ್ಮ್ ಅಳಿಸಿ
+            </button>
+          </div>
+        </form>
       </div>
     </section>
 
@@ -239,7 +373,7 @@
         <h4 data-i18n="footerNavTitle">Quick Navigation</h4>
         <ul class="footer-links">
           <li><a href="index.html" data-i18n="navHome">Home</a></li>
-          <li><a href="about.html" data-i18n="navAbout">About Us / Chef</a></li>
+          <li><a href="about.html" data-i18n="navAbout">About</a></li>
           <li><a href="pickles.html" data-i18n="navPickles">Pickles</a></li>
           <li><a href="happalasandige.html" data-i18n="navHappala">Happala / Sandige</a></li>
           <li><a href="chillie-powder.html" data-i18n="navMasala">Masala Powders</a></li>
@@ -255,11 +389,17 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h4 data-i18n="footerEmailTitle">Email & Address</h4>
+        <h4 data-i18n="footerEmailTitle">Our Locations & Email</h4>
         <ul class="footer-contact-list">
-          <li><strong>EMAIL KARTHIK:</strong><br><a href="mailto:karthikiyergs@gmail.com">karthikiyergs@gmail.com</a></li>
-          <li><strong>EMAIL MANIKANTA:</strong><br><a href="mailto:manikantaiyer53@gmail.com">manikantaiyer53@gmail.com</a></li>
-          <li style="margin-top: 8px;">ADDRESS: GANGAPURA VILLAGE, CHAMARAHALLI POST, KOLAR, KARNATAKA-563101.</li>
+          <li><strong>EMAIL:</strong><br><a href="mailto:karthikiyergs@gmail.com">karthikiyergs@gmail.com</a><br><a href="mailto:manikantaiyer53@gmail.com">manikantaiyer53@gmail.com</a></li>
+          <li style="margin-top: 8px;">
+            <strong>BENGALURU TIFFIN & LUNCH:</strong><br>
+            401, Siri Crystal Apartment, Uttarahalli Main Road, Bengaluru - 560061.
+          </li>
+          <li style="margin-top: 8px;">
+            <strong>KOLAR PRODUCTION UNIT:</strong><br>
+            Gangapura Village, Chamarahalli Post, Kolar Taluk & District - 563101.
+          </li>
         </ul>
       </div>
     </div>

@@ -6,7 +6,7 @@ const translations = {
     topNotice: '<i class="fa-solid fa-leaf"></i> 100% Authentic Homemade • Traditional Karnataka Brahmin Vegetarian Taste',
     brandSub: 'ಶ್ರೀ ಶ್ರೀನಿವಾಸ ಫುಡ್ಸ್',
     navHome: 'Home',
-    navAbout: 'About Us / Chef',
+    navAbout: 'About',
     navPickles: 'Pickles',
     navHappala: 'Happala / Sandige',
     navMasala: 'Masala Powders',
@@ -31,8 +31,8 @@ const translations = {
     catMasalaDesc: 'Aromatic Sambhar, Rasam, Bisi Bele Bath, Vangi Bath, Puliyogare, and pure Chutney powders freshly ground to order.',
     catHappala: 'Happala & Sandige',
     catHappalaDesc: 'Sun-dried Akki Happala, Peni (Shavige) Sandige, Sabakki, Haralu Sandige, Kolu, and crisp Potato Chips.',
-    catOther: 'Tokku, Gojju & Other Foods',
-    catOtherDesc: 'Tangy Mango/Tomato/Tamarind Tokku, Melkote style Puliyogare Gojju, Uppu Menasinakayi & Hurida Ragi Hittu.',
+    catOther: 'Tokku, Gojju & Snacks (ಕೊಡುಬಳೆ)',
+    catOtherDesc: 'Crispy Kodubale, tangy Mango/Tomato/Tamarind Tokku, Melkote Puliyogare Gojju, Uppu Menasinakayi & Hurida Ragi Hittu.',
     
     chefSectionTitle: 'Meet Our Chef - Srinivas G R',
     chefStory: 'With a passion towards cooking, I Srinivas G R started my journey as a chef. Cooking is something that makes me happy and I love cooking for others. When I serve a bowl of a recipe, it contains my love, hard work, and passion for my profession.',
@@ -72,7 +72,7 @@ const translations = {
     navPickles: 'ಉಪ್ಪಿನಕಾಯಿ',
     navHappala: 'ಹಪ್ಪಳ / ಸಂಡಿಗೆ',
     navMasala: 'ಮಸಾಲೆ ಪುಡಿಗಳು',
-    navOther: 'ಇತರ ಆಹಾರಗಳು',
+    navOther: 'ಇತರ ಆಹಾರಗಳು & ತಿಂಡಿ',
     navContact: 'ಸಂಪರ್ಕಿಸಿ',
     navFeedback: 'ಪ್ರತಿಕ್ರಿಯೆ',
     navOrderNow: 'ಈಗಲೇ ಆರ್ಡರ್ ಮಾಡಿ',
@@ -93,8 +93,8 @@ const translations = {
     catMasalaDesc: 'ಮನೆಯಲ್ಲಿ ಹುರಿದು ಬೀಸಿದ ಸಾಂಬಾರ್, ರಸಂ, ಬಿಸಿಬೇಳೆ ಬಾತ್, ವಾಂಗಿಬಾತ್, ಪುಳಿಯೋಗರೆ ಹಾಗೂ 4 ಬಗೆಯ ಚಟ್ನಿ ಪುಡಿಗಳು.',
     catHappala: 'ಹಪ್ಪಳ ಮತ್ತು ಸಂಡಿಗೆ',
     catHappalaDesc: 'ಬಿಸಿಲಿನಲ್ಲಿ ಒಣಗಿಸಿದ ಅಕ್ಕಿ ಹಪ್ಪಳ, ಪೆಣಿ ಶಾವಿಗೆ ಸಂಡಿಗೆ, ಸಬ್ಬಕ್ಕಿ, ಹರಳು ಸಂಡಿಗೆ, ಕೋಲು ಸಂಡಿಗೆ ಹಾಗೂ ಆಲೂಗಡ್ಡೆ ಚಿಪ್ಸ್.',
-    catOther: 'ತೊಕ್ಕು, ಗೊಜ್ಜು ಮತ್ತು ಇತರ ಉತ್ಪನ್ನಗಳು',
-    catOtherDesc: 'ಮಾವಿನಕಾಯಿ/ಟೊಮೆಟೊ/ಹುಣಸೆ ತೊಕ್ಕು, ದೇವಸ್ಥಾನದ ಶೈಲಿಯ ಪುಳಿಯೋಗರೆ ಗೊಜ್ಜು, ಉಪ್ಪು ಮೆಣಸಿನಕಾಯಿ ಮತ್ತು ಹುರಿದ ರಾಗಿ ಹಿಟ್ಟು.',
+    catOther: 'ತೊಕ್ಕು, ಗೊಜ್ಜು ಮತ್ತು ತಿಂಡಿಗಳು (ಕೊಡುಬಳೆ)',
+    catOtherDesc: 'ಗರಿಗರಿ ಕೊಡುಬಳೆ, ಮಾವಿನಕಾಯಿ/ಟೊಮೆಟೊ/ಹುಣಸೆ ತೊಕ್ಕು, ಮೇಲುಕೋಟೆ ಪುಳಿಯೋಗರೆ ಗೊಜ್ಜು, ಉಪ್ಪು ಮೆಣಸಿನಕಾಯಿ ಮತ್ತು ಹುರಿದ ರಾಗಿ ಹಿಟ್ಟು.',
     
     chefSectionTitle: 'ನಮ್ಮ ಮುಖ್ಯ ಬಾಣಸಿಗರು - ಶ್ರೀನಿವಾಸ್ ಜಿ ಆರ್',
     chefStory: 'ಅಡುಗೆ ಮಾಡುವ ಅಪಾರ ಆಸಕ್ತಿಯೊಂದಿಗೆ ನಾನು ಶ್ರೀನಿವಾಸ್ ಜಿ ಆರ್ ಮುಖ್ಯ ಬಾಣಸಿಗನಾಗಿ ನನ್ನ ಪಯಣ ಪ್ರಾರಂಭಿಸಿದೆ. ಇತರರಿಗೆ ರುಚಿಕರವಾದ ಅಡುಗೆ ಮಾಡಿ ಬಡಿಸುವುದು ನನಗೆ ಅಪಾರ ಸಂತೋಷ ನೀಡುತ್ತದೆ. ನಾನು ಸಿದ್ಧಪಡಿಸುವ ಪ್ರತಿಯೊಂದು ಪಾಕವಿಧಾನದಲ್ಲೂ ಪ್ರೀತಿ, ಶ್ರಮ ಮತ್ತು ವೃತ್ತಿಪರತೆ ಅಡಗಿದೆ.',
@@ -256,6 +256,76 @@ document.addEventListener('DOMContentLoaded', () => {
             behavior: 'smooth',
             block: 'start'
           });
+        }
+      }
+    });
+  });
+
+  // 7. Web3Forms AJAX Form Submission Handler
+  const web3Forms = document.querySelectorAll('form[action*="web3forms"]');
+  web3Forms.forEach(form => {
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      
+      const submitBtn = form.querySelector('.gf-submit-btn');
+      const statusMsg = form.querySelector('.gf-status-msg');
+      const originalBtnHtml = submitBtn ? submitBtn.innerHTML : 'Submit';
+      
+      if (statusMsg) {
+        statusMsg.className = 'gf-status-msg';
+        statusMsg.style.display = 'none';
+        statusMsg.innerHTML = '';
+      }
+      
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Submitting / ಕಳುಹಿಸಲಾಗುತ್ತಿದೆ...';
+      }
+
+      const formData = new FormData(form);
+
+      try {
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: formData
+        });
+
+        const data = await response.json();
+
+        if (response.status === 200 && data.success) {
+          if (statusMsg) {
+            statusMsg.className = 'gf-status-msg success';
+            statusMsg.innerHTML = `
+              <div style="font-weight: 700; margin-bottom: 4px;">
+                <i class="fa-solid fa-circle-check"></i> ಧನ್ಯವಾದಗಳು! ನಿಮ್ಮ ವಿವರಗಳನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಸ್ವೀಕರಿಸಲಾಗಿದೆ.
+              </div>
+              <div>Thank you! Your submission has been received successfully. We will get in touch with you shortly.</div>
+            `;
+            statusMsg.style.display = 'block';
+          } else {
+            alert('ಧನ್ಯವಾದಗಳು! ನಿಮ್ಮ ಆರ್ಡರ್ ಯಶಸ್ವಿಯಾಗಿ ಸಲ್ಲಿಕೆಯಾಗಿದೆ. / Thank you! Your submission was successful.');
+          }
+          form.reset();
+        } else {
+          throw new Error(data.message || 'Submission failed');
+        }
+      } catch (err) {
+        if (statusMsg) {
+          statusMsg.className = 'gf-status-msg error';
+          statusMsg.innerHTML = `
+            <div style="font-weight: 700; margin-bottom: 4px;">
+              <i class="fa-solid fa-triangle-exclamation"></i> ಸಲ್ಲಿಕೆ ವಿಫಲವಾಗಿದೆ / Submission Error
+            </div>
+            <div>There was a problem submitting your form. Please call or WhatsApp us directly at <strong>9880170209</strong> or <strong>8197933637</strong>.</div>
+          `;
+          statusMsg.style.display = 'block';
+        } else {
+          alert('Could not submit form. Please contact us via WhatsApp: 9880170209');
+        }
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalBtnHtml;
         }
       }
     });

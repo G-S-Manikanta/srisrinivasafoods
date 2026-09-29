@@ -61,7 +61,7 @@
       <nav>
         <ul class="nav-menu" id="navMenu">
           <li><a href="index.html" class="nav-link active" data-i18n="navHome">Home</a></li>
-          <li><a href="about.html" class="nav-link" data-i18n="navAbout">About Us / Chef</a></li>
+          <li><a href="about.html" class="nav-link" data-i18n="navAbout">About</a></li>
           <li><a href="pickles.html" class="nav-link" data-i18n="navPickles">Pickles</a></li>
           <li><a href="happalasandige.html" class="nav-link" data-i18n="navHappala">Happala / Sandige</a></li>
           <li><a href="chillie-powder.html" class="nav-link" data-i18n="navMasala">Masala Powders</a></li>
@@ -162,13 +162,13 @@
         </div>
         <div class="category-card-body">
           <div>
-            <h3 data-i18n="catOther">Tokku, Gojju & Other Foods</h3>
-            <div class="kannada-name kannada-text">ತೊಕ್ಕು ಮತ್ತು ಇತರ ಉತ್ಪನ್ನಗಳು</div>
-            <p data-i18n="catOtherDesc">Tangy Mango/Tomato/Tamarind Tokku, Melkote style Puliyogare Gojju, Uppu Menasinakayi & Hurida Ragi Hittu.</p>
+            <h3 data-i18n="catOther">Tokku, Gojju & Snacks (ಕೊಡುಬಳೆ)</h3>
+            <div class="kannada-name kannada-text">ತೊಕ್ಕು, ಗೊಜ್ಜು ಮತ್ತು ತಿಂಡಿಗಳು</div>
+            <p data-i18n="catOtherDesc">Crispy Kodubale, Tangy Mango/Tomato/Tamarind Tokku, Melkote style Puliyogare Gojju, Uppu Menasinakayi & Hurida Ragi Hittu.</p>
           </div>
           <div>
-            <div class="price-badge">Tokku: ₹250/kg | Gojju: ₹700/kg</div>
-            <a href="other-foods.html" class="btn btn-primary btn-sm" style="width: 100%;" data-en="View Other Foods" data-kn="ಇತರ ಆಹಾರಗಳನ್ನು ನೋಡಿ">View Other Foods <i class="fa-solid fa-arrow-right"></i></a>
+            <div class="price-badge">Tokku: ₹250/kg | Kodubale: ₹350/kg | Gojju: ₹700/kg</div>
+            <a href="other-foods.html" class="btn btn-primary btn-sm" style="width: 100%;" data-en="View Other Foods & Snacks" data-kn="ಇತರ ಆಹಾರ & ತಿಂಡಿಗಳನ್ನು ನೋಡಿ">View Other Foods & Snacks <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
       </div>
@@ -215,7 +215,7 @@
               <th>Price (ದರ)</th>
               <th>Pickles (ಉಪ್ಪಿನಕಾಯಿ)</th>
               <th>Price (ದರ)</th>
-              <th>Tokku & Gojju (ತೊಕ್ಕು/ಗೊಜ್ಜು)</th>
+              <th>Tokku, Gojju & Snacks (ತೊಕ್ಕು/ಗೊಜ್ಜು/ತಿಂಡಿ)</th>
               <th>Price (ದರ)</th>
               <th>Sandige & Papad (ಹಪ್ಪಳ/ಸಂಡಿಗೆ)</th>
               <th>Price (ದರ)</th>
@@ -261,8 +261,8 @@
               <td class="table-price">₹ 700 /kg</td>
               <td>Makli Beru (ಮಾಕಳಿ ಬೇರು)</td>
               <td class="table-price">₹ 600 /kg</td>
-              <td>—</td>
-              <td>—</td>
+              <td>Kodubale (ಕೊಡುಬಳೆ)</td>
+              <td class="table-price">₹ 350 /kg</td>
               <td>Haralu Sandige (ಹರಳು ಸಂಡಿಗೆ)</td>
               <td class="table-price">₹ 450 /kg</td>
             </tr>
@@ -342,61 +342,361 @@
 
       <!-- Tab 1: Pickle Order Form -->
       <div class="tab-content active" id="form-pickle">
-        <div style="margin-bottom: 12px; font-weight: 600; color: var(--primary);" data-en="Fill out this Google Form to order authentic homemade pickles:" data-kn="ಶುದ್ಧ ಮನೆ ಶೈಲಿಯ ಉಪ್ಪಿನಕಾಯಿಗಳನ್ನು ಆರ್ಡರ್ ಮಾಡಲು ಈ ಗೂಗಲ್ ಫಾರ್ಮ್ ಭರ್ತಿ ಮಾಡಿ:">
-          <i class="fa-solid fa-circle-info"></i> Fill out this Google Form to order authentic homemade pickles:
-        </div>
-        <div class="form-iframe-container">
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfUGhX7U0FCNlen4o87qn0iGZhvyr-rPb-TMg9YM86MnUKlVA/viewform?embedded=true" title="Pickle Order Form" loading="lazy">Loading Google Form…</iframe>
+        <div class="gf-form-card">
+          <div class="gf-form-header">
+            <div class="gf-form-brand">
+              <i class="fa-solid fa-jar"></i> Sri Srinivasa Foods • ಶ್ರೀ ಶ್ರೀನಿವಾಸ ಫುಡ್ಸ್
+            </div>
+            <h2 class="gf-form-title">Pickle Order Form / ಉಪ್ಪಿನಕಾಯಿ ಆರ್ಡರ್</h2>
+            <p class="gf-form-desc">Authentic homemade traditional pickles cured in ceramic Bharanis. Fill in your delivery details below.</p>
+            <div class="gf-required-notice">* Indicates required question / ಕಡ್ಡಾಯ ಕ್ಷೇತ್ರ</div>
+          </div>
+
+          <form action="https://api.web3forms.com/submit" method="POST" class="gf-form-body">
+            <input type="hidden" name="access_key" value="1e39391c-e480-4176-8931-613de96f3d66">
+            <input type="hidden" name="subject" value="New Pickle Order (Home Page) - Sri Srinivasa Foods">
+            <input type="hidden" name="from_name" value="Sri Srinivasa Foods Portal">
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+            <div class="gf-question-box">
+              <label class="gf-label" for="idx_pickle_name">Full Name / ಪೂರ್ಣ ಹೆಸರು <span class="req-star">*</span></label>
+              <input type="text" id="idx_pickle_name" name="Full Name (ಹೆಸರು)" class="gf-input" placeholder="Your answer / ನಿಮ್ಮ ಹೆಸರು" required>
+            </div>
+
+            <div class="gf-question-box">
+              <label class="gf-label" for="idx_pickle_phone">Phone Number / ದೂರವಾಣಿ ಸಂಖ್ಯೆ <span class="req-star">*</span></label>
+              <input type="tel" id="idx_pickle_phone" name="Phone Number (ಫೋನ್)" class="gf-input" placeholder="10-digit mobile number" required>
+            </div>
+
+            <div class="gf-question-box">
+              <label class="gf-label" for="idx_pickle_address">Delivery Address / ವಿಳಾಸ <span class="req-star">*</span></label>
+              <textarea id="idx_pickle_address" name="Delivery Address (ವಿಳಾಸ)" class="gf-textarea" placeholder="Your full postal address with pincode" required></textarea>
+            </div>
+
+            <div class="gf-question-box">
+              <label class="gf-label">Type of Pickle / ಉಪ್ಪಿನಕಾಯಿಯ ವಿಧ <span class="req-star">*</span></label>
+              <div class="gf-option-grid">
+                <label class="gf-option-item">
+                  <input type="checkbox" name="Pickle Items" value="Makali Beru (ಮಾಕಳಿ ಬೇರು) - ₹600/kg">
+                  <span>Makali Beru (ಮಾಕಳಿ ಬೇರು) - ₹600/kg</span>
+                </label>
+                <label class="gf-option-item">
+                  <input type="checkbox" name="Pickle Items" value="Mango Pickle (ಮಾವಿನಕಾಯಿ) - ₹250/kg">
+                  <span>Mango Pickle (ಮಾವಿನಕಾಯಿ) - ₹250/kg</span>
+                </label>
+                <label class="gf-option-item">
+                  <input type="checkbox" name="Pickle Items" value="Lemon Pickle (ನಿಂಬೆಕಾಯಿ) - ₹250/kg">
+                  <span>Lemon Pickle (ನಿಂಬೆಕಾಯಿ) - ₹250/kg</span>
+                </label>
+                <label class="gf-option-item">
+                  <input type="checkbox" name="Pickle Items" value="Mango Ginger Pickle (ಮಾವಿನ ಶುಂಠಿ) - ₹500/kg">
+                  <span>Mango Ginger (ಮಾವಿನ ಶುಂಠಿ) - ₹500/kg</span>
+                </label>
+                <label class="gf-option-item">
+                  <input type="checkbox" name="Pickle Items" value="Avakai Pickle (ಆವಕಾಯಿ) - ₹400/kg">
+                  <span>Avakai Pickle (ಆವಕಾಯಿ) - ₹400/kg</span>
+                </label>
+                <label class="gf-option-item">
+                  <input type="checkbox" name="Pickle Items" value="Nelli Kayi Pickle (ನೆಲ್ಲಿಕಾಯಿ) - ₹250/kg">
+                  <span>Nelli Kayi (ನೆಲ್ಲಿಕಾಯಿ) - ₹250/kg</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="gf-question-box">
+              <label class="gf-label">Quantity / ತೂಕ (No. of KGs) <span class="req-star">*</span></label>
+              <div class="gf-option-grid">
+                <label class="gf-option-item"><input type="radio" name="Quantity (ತೂಕ)" value="1 kg" required><span>1 kg</span></label>
+                <label class="gf-option-item"><input type="radio" name="Quantity (ತೂಕ)" value="2 kg"><span>2 kg</span></label>
+                <label class="gf-option-item"><input type="radio" name="Quantity (ತೂಕ)" value="3 kg"><span>3 kg</span></label>
+                <label class="gf-option-item"><input type="radio" name="Quantity (ತೂಕ)" value="4 kg"><span>4 kg</span></label>
+                <label class="gf-option-item"><input type="radio" name="Quantity (ತೂಕ)" value="5 kg+"><span>5 kg+</span></label>
+              </div>
+            </div>
+
+            <div class="gf-question-box">
+              <label class="gf-label" for="idx_pickle_date">Preferred Date / ದಿನಾಂಕ</label>
+              <input type="date" id="idx_pickle_date" name="Preferred Date" class="gf-input">
+            </div>
+
+            <div class="gf-question-box">
+              <label class="gf-label" for="idx_pickle_comments">Comments / ಸೂಚನೆಗಳು</label>
+              <textarea id="idx_pickle_comments" name="Special Instructions" class="gf-textarea" placeholder="Any specific requirements..."></textarea>
+            </div>
+
+            <div class="gf-status-msg"></div>
+
+            <div class="gf-submit-wrap">
+              <button type="submit" class="gf-submit-btn">
+                <i class="fa-solid fa-paper-plane"></i> Submit Order / ಆರ್ಡರ್ ಸಲ್ಲಿಸಿ
+              </button>
+              <button type="reset" class="gf-reset-btn">
+                <i class="fa-solid fa-rotate-left"></i> Clear form / ಅಳಿಸಿ
+              </button>
+            </div>
+          </form>
         </div>
       </div>
 
       <!-- Tab 2: Happala Sandige Form -->
       <div class="tab-content" id="form-happala">
-        <div style="margin-bottom: 12px; font-weight: 600; color: var(--primary);" data-en="Fill out this Google Form for crisp Happala and Sandige orders:" data-kn="ಗರಿಗರಿಯಾದ ಹಪ್ಪಳ ಮತ್ತು ಸಂಡಿಗೆಗಳನ್ನು ಆರ್ಡರ್ ಮಾಡಲು ಈ ಗೂಗಲ್ ಫಾರ್ಮ್ ಭರ್ತಿ ಮಾಡಿ:">
-          <i class="fa-solid fa-circle-info"></i> Fill out this Google Form for crisp Happala and Sandige orders:
-        </div>
-        <div class="form-iframe-container">
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSegtS2fmlRlipv1yv1MAbSNl9i6fBzDNNwrh_xiB68VGMtzIw/viewform?embedded=true" title="Happala Sandige Order Form" loading="lazy">Loading Google Form…</iframe>
+        <div class="gf-form-card">
+          <div class="gf-form-header">
+            <div class="gf-form-brand">
+              <i class="fa-solid fa-sun"></i> Sri Srinivasa Foods • ಶ್ರೀ ಶ್ರೀನಿವಾಸ ಫುಡ್ಸ್
+            </div>
+            <h2 class="gf-form-title">Happala & Sandige Order / ಹಪ್ಪಳ ಮತ್ತು ಸಂಡಿಗೆ</h2>
+            <p class="gf-form-desc">Sun-dried crispy Akki Happala, Peni Sandige, Sabakki, Haralu Sandige, and Kolu Sandige.</p>
+            <div class="gf-required-notice">* Indicates required question / ಕಡ್ಡಾಯ ಕ್ಷೇತ್ರ</div>
+          </div>
+
+          <form action="https://api.web3forms.com/submit" method="POST" class="gf-form-body">
+            <input type="hidden" name="access_key" value="1e39391c-e480-4176-8931-613de96f3d66">
+            <input type="hidden" name="subject" value="New Happala & Sandige Order (Home Page) - Sri Srinivasa Foods">
+            <input type="hidden" name="from_name" value="Sri Srinivasa Foods Portal">
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+            <div class="gf-question-box">
+              <label class="gf-label" for="idx_happala_name">Full Name / ಪೂರ್ಣ ಹೆಸರು <span class="req-star">*</span></label>
+              <input type="text" id="idx_happala_name" name="Full Name (ಹೆಸರು)" class="gf-input" placeholder="Your answer / ನಿಮ್ಮ ಹೆಸರು" required>
+            </div>
+
+            <div class="gf-question-box">
+              <label class="gf-label" for="idx_happala_phone">Phone Number / ದೂರವಾಣಿ ಸಂಖ್ಯೆ <span class="req-star">*</span></label>
+              <input type="tel" id="idx_happala_phone" name="Phone Number (ಫೋನ್)" class="gf-input" placeholder="10-digit mobile number" required>
+            </div>
+
+            <div class="gf-question-box">
+              <label class="gf-label" for="idx_happala_address">Delivery Address / ವಿಳಾಸ <span class="req-star">*</span></label>
+              <textarea id="idx_happala_address" name="Delivery Address (ವಿಳಾಸ)" class="gf-textarea" placeholder="Your full postal address with pincode" required></textarea>
+            </div>
+
+            <div class="gf-question-box">
+              <label class="gf-label">Type of Product / ಉತ್ಪನ್ನದ ವಿಧ <span class="req-star">*</span></label>
+              <div class="gf-option-grid">
+                <label class="gf-option-item">
+                  <input type="checkbox" name="Happala Sandige Items" value="Akki Happala (ಅಕ್ಕಿ ಹಪ್ಪಳ) - ₹150/100no">
+                  <span>Akki Happala (ಅಕ್ಕಿ ಹಪ್ಪಳ) - ₹150/100no</span>
+                </label>
+                <label class="gf-option-item">
+                  <input type="checkbox" name="Happala Sandige Items" value="Peni Sandige (ಪೆಣಿ ಶಾವಿಗೆ ಸಂಡಿಗೆ) - ₹150/kg">
+                  <span>Peni Sandige (ಪೆಣಿ ಸಂಡಿಗೆ) - ₹150/kg</span>
+                </label>
+                <label class="gf-option-item">
+                  <input type="checkbox" name="Happala Sandige Items" value="Sabakki Sandige (ಸಾಬೂದಾನಿ/ಸಾಬಕ್ಕಿ) - ₹250/kg">
+                  <span>Sabakki Sandige (ಸಾಬಕ್ಕಿ) - ₹250/kg</span>
+                </label>
+                <label class="gf-option-item">
+                  <input type="checkbox" name="Happala Sandige Items" value="Haralu Sandige (ಹರಳು ಸಂಡಿಗೆ) - ₹450/kg">
+                  <span>Haralu Sandige (ಹರಳು ಸಂಡಿಗೆ) - ₹450/kg</span>
+                </label>
+                <label class="gf-option-item">
+                  <input type="checkbox" name="Happala Sandige Items" value="Kolu Sandige (ಕೋಲು ಸಂಡಿಗೆ) - ₹150/kg">
+                  <span>Kolu Sandige (ಕೋಲು ಸಂಡಿಗೆ) - ₹150/kg</span>
+                </label>
+                <label class="gf-option-item">
+                  <input type="checkbox" name="Happala Sandige Items" value="Potato Chips (ಆಲೂಗಡ್ಡೆ ಚಿಪ್ಸ್) - ₹250/kg">
+                  <span>Potato Chips (ಆಲೂಗಡ್ಡೆ ಚಿಪ್ಸ್) - ₹250/kg</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="gf-question-box">
+              <label class="gf-label" for="idx_happala_qty">Quantity / ಪ್ರಮಾಣ (Kgs or Nos) <span class="req-star">*</span></label>
+              <input type="text" id="idx_happala_qty" name="Quantity Required" class="gf-input" placeholder="e.g. 2 kg Haralu Sandige, 100no Akki Happala" required>
+            </div>
+
+            <div class="gf-question-box">
+              <label class="gf-label" for="idx_happala_date">Preferred Date / ದಿನಾಂಕ</label>
+              <input type="date" id="idx_happala_date" name="Preferred Date" class="gf-input">
+            </div>
+
+            <div class="gf-question-box">
+              <label class="gf-label" for="idx_happala_comments">Comments / ಇತರ ವಿವರಗಳು</label>
+              <textarea id="idx_happala_comments" name="Special Instructions" class="gf-textarea" placeholder="Any special requests..."></textarea>
+            </div>
+
+            <div class="gf-status-msg"></div>
+
+            <div class="gf-submit-wrap">
+              <button type="submit" class="gf-submit-btn">
+                <i class="fa-solid fa-paper-plane"></i> Submit Order / ಆರ್ಡರ್ ಸಲ್ಲಿಸಿ
+              </button>
+              <button type="reset" class="gf-reset-btn">
+                <i class="fa-solid fa-rotate-left"></i> Clear form / ಅಳಿಸಿ
+              </button>
+            </div>
+          </form>
         </div>
       </div>
 
-      <!-- Tab 3: General Enquiry Form -->
+      <!-- Tab 3: General Enquiry & Powders Form -->
       <div class="tab-content" id="form-enquiry">
-        <div style="margin-bottom: 12px; font-weight: 600; color: var(--primary);" data-en="For masala powders, tokku, gojju, and bulk orders:" data-kn="ಮಸಾಲೆ ಪುಡಿಗಳು, ತೊಕ್ಕು, ಗೊಜ್ಜು ಹಾಗೂ ಹೆಚ್ಚಿನ ವಿವರಗಳಿಗಾಗಿ:">
-          <i class="fa-solid fa-circle-info"></i> For masala powders, tokku, gojju, and bulk orders:
-        </div>
-        <div class="form-iframe-container">
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSefMzP3ZZ7F4mejpyzr_SbhvPMW8485qu43hGn3aRt2aYmDTQ/viewform?embedded=true" title="General Enquiry Form" loading="lazy">Loading Google Form…</iframe>
+        <div class="gf-form-card">
+          <div class="gf-form-header">
+            <div class="gf-form-brand">
+              <i class="fa-solid fa-clipboard-question"></i> Sri Srinivasa Foods • ಶ್ರೀ ಶ್ರೀನಿವಾಸ ಫುಡ್ಸ್
+            </div>
+            <h2 class="gf-form-title">General Enquiry & Masala Powders / ವಿಚಾರಣೆ & ಮಸಾಲೆ ಪುಡಿಗಳು</h2>
+            <p class="gf-form-desc">For spice powders, special foods (tokku/gojju), catering orders, or questions.</p>
+            <div class="gf-required-notice">* Indicates required question / ಕಡ್ಡಾಯ ಕ್ಷೇತ್ರ</div>
+          </div>
+
+          <form action="https://api.web3forms.com/submit" method="POST" class="gf-form-body">
+            <input type="hidden" name="access_key" value="1e39391c-e480-4176-8931-613de96f3d66">
+            <input type="hidden" name="subject" value="New Enquiry / Spice Order (Home Page) - Sri Srinivasa Foods">
+            <input type="hidden" name="from_name" value="Sri Srinivasa Foods Portal">
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+            <div class="gf-question-box">
+              <label class="gf-label" for="idx_enq_name">Full Name / ಪೂರ್ಣ ಹೆಸರು <span class="req-star">*</span></label>
+              <input type="text" id="idx_enq_name" name="Full Name (ಹೆಸರು)" class="gf-input" placeholder="Your answer / ನಿಮ್ಮ ಹೆಸರು" required>
+            </div>
+
+            <div class="gf-question-box">
+              <label class="gf-label" for="idx_enq_phone">Phone Number / ದೂರವಾಣಿ ಸಂಖ್ಯೆ <span class="req-star">*</span></label>
+              <input type="tel" id="idx_enq_phone" name="Phone Number (ಫೋನ್)" class="gf-input" placeholder="10-digit mobile number" required>
+            </div>
+
+            <div class="gf-question-box">
+              <label class="gf-label" for="idx_enq_email">Email Address / ಇಮೇಲ್</label>
+              <input type="email" id="idx_enq_email" name="Email Address" class="gf-input" placeholder="example@email.com">
+            </div>
+
+            <div class="gf-question-box">
+              <label class="gf-label" for="idx_enq_address">Address / City / ವಿಳಾಸ</label>
+              <textarea id="idx_enq_address" name="Address (ವಿಳಾಸ)" class="gf-textarea" placeholder="Your city or delivery address"></textarea>
+            </div>
+
+            <div class="gf-question-box">
+              <label class="gf-label" for="idx_enq_message">Requirement or Enquiry Details / ವಿವರಗಳು <span class="req-star">*</span></label>
+              <textarea id="idx_enq_message" name="Enquiry Message / Order Details" class="gf-textarea" placeholder="Mention powders, quantities, or your query..." required></textarea>
+            </div>
+
+            <div class="gf-status-msg"></div>
+
+            <div class="gf-submit-wrap">
+              <button type="submit" class="gf-submit-btn">
+                <i class="fa-solid fa-paper-plane"></i> Send Enquiry / ವಿಚಾರಣೆ ಸಲ್ಲಿಸಿ
+              </button>
+              <button type="reset" class="gf-reset-btn">
+                <i class="fa-solid fa-rotate-left"></i> Clear form / ಅಳಿಸಿ
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
 
-    <!-- Location & Direct Contacts -->
+    <!-- Bengaluru Daily Tiffin & Lunch Delivery Section -->
+    <section class="tiffin-showcase-card">
+      <div class="tiffin-img-wrap">
+        <img src="assets/tiffin_lunch.jpg" alt="Traditional Pure Veg Tiffin and Lunch Delivery in Bengaluru" loading="lazy">
+        <span class="tiffin-overlay-badge"><i class="fa-solid fa-bicycle"></i> Bengaluru Home Delivery</span>
+      </div>
+      <div class="tiffin-content-wrap">
+        <span class="tiffin-tag" data-en="Bengaluru Delivery Service" data-kn="ಬೆಂಗಳೂರು ಹೋಮ್ ಡೆಲಿವರಿ">Bengaluru Delivery Service</span>
+        <h2 class="tiffin-title" data-en="Pure Veg Daily Tiffin & Lunch Delivery" data-kn="ಶುದ್ಧ ಸಸ್ಯಾಹಾರಿ ದಿನನಿತ್ಯದ ತಿಂಡಿ & ಊಟ">Pure Veg Daily Tiffin & Lunch Delivery</h2>
+        <p style="color: var(--text-muted); line-height: 1.5;" data-en="Authentic, healthy, and hygienic Brahmin-style homemade breakfast and afternoon lunch delivered hot in and around Bengaluru." data-kn="ಬೆಂಗಳೂರು ಹಾಗೂ ಸುತ್ತಮುತ್ತ ಶುದ್ಧ ಮನೆ ಶೈಲಿಯ ಬ್ರಾಹ್ಮಣ ಪದ್ಧತಿಯ ರುಚಿಕರವಾದ ತಿಂಡಿ ಮತ್ತು ಮಧ್ಯಾಹ್ನದ ಊಟದ ಹೋಮ್ ಡೆಲಿವರಿ ಸೇವೆ ಲಭ್ಯವಿದೆ.">
+          Authentic, healthy, and hygienic Brahmin-style homemade breakfast and afternoon lunch delivered hot in and around Bengaluru.
+        </p>
+
+        <div class="tiffin-location-box">
+          <i class="fa-solid fa-house-chimney" style="color: var(--accent-gold-dark); margin-right: 6px;"></i>
+          <strong>Kitchen / Pickup Address:</strong><br>
+          <span>401, Siri Crystal Apartment, Uttarahalli Main Road, Bengaluru, Karnataka - 560061.</span>
+        </div>
+
+        <div class="tiffin-menu-grid">
+          <div class="tiffin-menu-item">
+            <h4><i class="fa-solid fa-mug-hot" style="color: var(--accent-gold);"></i> Daily Morning Tiffin</h4>
+            <p style="font-size: 0.82rem; color: var(--text-muted);">Soft Idli-Vada, Masala/Set Dosa, Akki Rotti, Khara & Kesari Bath, Pongal, Poori-Saagu with pure ghee.</p>
+          </div>
+          <div class="tiffin-menu-item">
+            <h4><i class="fa-solid fa-bowl-rice" style="color: var(--primary);"></i> Afternoon Full Lunch</h4>
+            <p style="font-size: 0.82rem; color: var(--text-muted);">Hot Rice, Sambhar, Rasam, Fresh Palya, Kootu/Tovve, Homemade Curd, Pickle & Crisp Happala.</p>
+          </div>
+        </div>
+
+        <div class="tiffin-action-buttons">
+          <a href="https://wa.me/919880170209?text=Namaskara,%20I%20am%20interested%20in%20Daily%20Tiffin%20and%20Lunch%20delivery%20in%20Bengaluru." target="_blank" rel="noopener" class="btn btn-gold btn-sm">
+            <i class="fa-brands fa-whatsapp"></i> Order Tiffin on WhatsApp
+          </a>
+          <a href="tel:+919972017010" class="btn btn-primary btn-sm">
+            <i class="fa-solid fa-phone"></i> Call Srinivas: 9972017010
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location & Direct Contacts Section -->
     <section style="margin-top: 50px;">
       <div class="section-header">
-        <span class="section-tag" data-en="Visit & Contact" data-kn="ಭೇಟಿ ನೀಡಿ ಮತ್ತು ಸಂಪರ್ಕಿಸಿ">Visit & Contact</span>
-        <h2 class="section-title" data-i18n="contactTitle">For More Details Please Visit</h2>
+        <span class="section-tag" data-en="Our Locations" data-kn="ನಮ್ಮ ವಿಳಾಸಗಳು">Our Locations</span>
+        <h2 class="section-title" data-i18n="contactTitle">For More Details Please Visit & Contact</h2>
+        <p class="section-subtitle" data-en="Visit our heritage unit in Kolar or order daily tiffin from our Bengaluru kitchen." data-kn="ಕೋಲಾರದ ನಮ್ಮ ಸಾಂಪ್ರದಾಯಿಕ ಕೇಂದ್ರ ಅಥವಾ ಬೆಂಗಳೂರಿನ ತಿಂಡಿ & ಊಟದ ಕೇಂದ್ರವನ್ನು ಸಂಪರ್ಕಿಸಿ.">Visit our heritage unit in Kolar or order daily tiffin from our Bengaluru kitchen.</p>
       </div>
 
-      <div class="feedback-grid">
+      <div class="locations-two-grid">
+        <!-- Location 1: Bengaluru Kitchen -->
+        <div class="location-detail-card primary-loc">
+          <div>
+            <span class="loc-badge bengaluru"><i class="fa-solid fa-utensils"></i> Bengaluru Tiffin & Lunch Delivery</span>
+            <h3 style="color: var(--primary); font-size: 1.25rem; margin-bottom: 8px;">Bengaluru Kitchen & Delivery Hub</h3>
+            <div class="address-item" style="margin-bottom: 12px;">
+              <i class="fa-solid fa-location-dot address-icon"></i>
+              <div>
+                <strong>Address / ವಿಳಾಸ:</strong>
+                <p><strong>401, SIRI CRYSTAL APARTMENT,<br>UTTARAHALLI MAIN ROAD,<br>BENGALURU, KARNATAKA - 560061.</strong></p>
+              </div>
+            </div>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 14px;">
+              <i class="fa-solid fa-check-circle" style="color: #10b981;"></i> Pure Veg Daily Tiffin & Lunch Available in and around Bengaluru.
+            </p>
+          </div>
+          <div>
+            <a href="https://wa.me/919880170209?text=Namaskara,%20I%20would%20like%20to%20order%20Daily%20Tiffin/Lunch%20in%20Bengaluru." target="_blank" rel="noopener" class="btn btn-gold btn-sm" style="width: 100%;">
+              <i class="fa-brands fa-whatsapp"></i> Order Tiffin in Bengaluru
+            </a>
+          </div>
+        </div>
+
+        <!-- Location 2: Kolar Production Unit -->
+        <div class="location-detail-card">
+          <div>
+            <span class="loc-badge kolar"><i class="fa-solid fa-jar"></i> Traditional Heritage Production</span>
+            <h3 style="color: var(--primary); font-size: 1.25rem; margin-bottom: 8px;">Kolar Production Center</h3>
+            <div class="address-item" style="margin-bottom: 12px;">
+              <i class="fa-solid fa-location-dot address-icon"></i>
+              <div>
+                <strong>Address / ವಿಳಾಸ:</strong>
+                <p><strong>GANGAPURA VILLAGE, CHAMARAHALLI POST,<br>KOLAR TALUK AND DISTRICT,<br>KARNATAKA - 563101.</strong></p>
+              </div>
+            </div>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 14px;">
+              <i class="fa-solid fa-check-circle" style="color: #10b981;"></i> Handcrafted Pickles, Happala, Sandige, and Masala Powders.
+            </p>
+          </div>
+          <div>
+            <a href="order.html" class="btn btn-primary btn-sm" style="width: 100%;">
+              <i class="fa-solid fa-cart-shopping"></i> Order Traditional Foods
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Details & Map Grid -->
+      <div class="feedback-grid" style="margin-top: 30px;">
         <div class="feedback-info-box">
           <h3 data-i18n="heroTitle">Sri Srinivasa Foods</h3>
-          <p style="margin-bottom: 18px; color: var(--text-muted);" data-en="Authentic South Indian vegetarian homemade delicacies prepared with pure ingredients in Kolar." data-kn="ಕೋಲಾರ ಜಿಲ್ಲೆಯಲ್ಲಿ ಶುದ್ಧ ನೈಸರ್ಗಿಕ ಪದಾರ್ಥಗಳನ್ನು ಬಳಸಿ ತಯಾರಿಸಲಾದ ಸಾಂಪ್ರದಾಯಿಕ ಸಸ್ಯಾಹಾರಿ ಆಹಾರ ಉತ್ಪನ್ನಗಳು.">
-            Authentic South Indian vegetarian homemade delicacies prepared with pure ingredients in Kolar.
+          <p style="margin-bottom: 18px; color: var(--text-muted);" data-en="Direct contact for daily tiffin subscriptions, bulk parcel orders, and all food inquiries." data-kn="ದಿನನಿತ್ಯದ ಊಟ-ತಿಂಡಿ, ಉಪ್ಪಿನಕಾಯಿ, ಹಪ್ಪಳ, ಸಂಡಿಗೆ ಮತ್ತು ಮಸಾಲೆ ಪುಡಿಗಳಿಗಾಗಿ ನೇರವಾಗಿ ಸಂಪರ್ಕಿಸಿ.">
+            Direct contact for daily tiffin subscriptions, bulk parcel orders, and all food inquiries.
           </p>
-
-          <div class="address-item">
-            <i class="fa-solid fa-location-dot address-icon"></i>
-            <div>
-              <strong data-i18n="addressLabel">Address / ವಿಳಾಸ:</strong>
-              <p><strong>GANGAPURA VILLAGE, CHAMARAHALLI POST,<br>KOLAR TALUK AND DISTRICT, KARNATAKA - 563101.</strong></p>
-            </div>
-          </div>
 
           <div class="address-item">
             <i class="fa-solid fa-phone address-icon"></i>
             <div>
-              <strong data-i18n="phoneLabel">Phone Calls:</strong>
+              <strong data-i18n="phoneLabel">Direct Calls:</strong>
               <p>
                 Srinivasa: <a href="tel:+919972017010">9972017010</a><br>
                 Karthik G S: <a href="tel:+918197933637">8197933637</a><br>
@@ -416,16 +716,16 @@
           <div class="address-item">
             <i class="fa-solid fa-envelope address-icon"></i>
             <div>
-              <strong data-i18n="emailLabel">Email:</strong>
-              <p><a href="mailto:karthikiyergs@gmail.com">karthikiyergs@gmail.com</a><br><a href="mailto:manikantaiyer53@gmail.com">manikantaiyer53@gmail.com</a></p>
+              <strong data-i18n="emailLabel">Email (Optional):</strong>
+              <p><a href="mailto:karthikiyergs@gmail.com">karthikiyergs@gmail.com</a> / <a href="mailto:manikantaiyer53@gmail.com">manikantaiyer53@gmail.com</a></p>
             </div>
           </div>
         </div>
 
         <div class="map-card">
           <iframe 
-            src="https://maps.google.com/maps?q=Gangapura,+Karnataka+563101&t=&z=15&ie=UTF8&iwloc=&output=embed" 
-            title="Sri Srinivasa Foods Location Map"
+            src="https://maps.google.com/maps?q=Uttarahalli+Main+Road,+Bengaluru+560061&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+            title="Sri Srinivasa Foods Bengaluru Location Map"
             allowfullscreen="" 
             loading="lazy">
           </iframe>
@@ -461,7 +761,7 @@
         <h4 data-i18n="footerNavTitle">Quick Navigation</h4>
         <ul class="footer-links">
           <li><a href="index.html" data-i18n="navHome">Home</a></li>
-          <li><a href="about.html" data-i18n="navAbout">About Us / Chef</a></li>
+          <li><a href="about.html" data-i18n="navAbout">About</a></li>
           <li><a href="pickles.html" data-i18n="navPickles">Pickles</a></li>
           <li><a href="happalasandige.html" data-i18n="navHappala">Happala / Sandige</a></li>
           <li><a href="chillie-powder.html" data-i18n="navMasala">Masala Powders</a></li>
@@ -481,13 +781,16 @@
       </div>
 
       <div class="footer-col">
-        <h4 data-i18n="footerEmailTitle">Email & Address</h4>
+        <h4 data-i18n="footerEmailTitle">Our Locations & Email</h4>
         <ul class="footer-contact-list">
-          <li><strong>EMAIL KARTHIK:</strong><br><a href="mailto:karthikiyergs@gmail.com">karthikiyergs@gmail.com</a></li>
-          <li><strong>EMAIL MANIKANTA:</strong><br><a href="mailto:manikantaiyer53@gmail.com">manikantaiyer53@gmail.com</a></li>
-          <li style="margin-top: 10px;">
-            <strong>FOR MORE DETAILS PLEASE VISIT:</strong><br>
-            ADDRESS: GANGAPURA VILLAGE, CHAMARAHALLI POST, KOLAR TALUK AND DISTRICT, KARNATAKA-563101.
+          <li><strong>EMAIL:</strong><br><a href="mailto:karthikiyergs@gmail.com">karthikiyergs@gmail.com</a><br><a href="mailto:manikantaiyer53@gmail.com">manikantaiyer53@gmail.com</a></li>
+          <li style="margin-top: 8px;">
+            <strong>BENGALURU TIFFIN & LUNCH:</strong><br>
+            401, Siri Crystal Apartment, Uttarahalli Main Road, Bengaluru - 560061.
+          </li>
+          <li style="margin-top: 8px;">
+            <strong>KOLAR PRODUCTION UNIT:</strong><br>
+            Gangapura Village, Chamarahalli Post, Kolar Taluk & District - 563101.
           </li>
         </ul>
       </div>
